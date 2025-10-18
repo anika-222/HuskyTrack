@@ -1,13 +1,27 @@
 import React, { useState } from 'react';
 
 export default function App() {
-  const [count, setCount] = useState(0);
+
+  //Render Sidebar
+  const renderSidebar = () => {
+    return (
+      <></>
+    );
+  }
+
+  //Render Main Content
+  const renderMainContent = () => {
+    return (
+      <></>
+    );
+  }
+
+
+  //Return the Content
   return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>
-        Increment
-      </button>
+    <div className='all-content'>
+      <div className='sidebar'>{renderSidebar}</div>
+      <div className='main-content'>{renderMainContent}</div>
     </div>
   );
 }
