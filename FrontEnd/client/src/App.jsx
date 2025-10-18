@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
-import './App.css'; 
+import './App.css';
+import DashboardCard from './components/DashboardCard.jsx'
 
 export default function App() {
   const [pageType, setPageType] = useState('dashboard');
+
+  const tempUser = {
+    name: 'Jane Doe',
+    email: 'jane@example.com',
+    degree: 'Computer Science',
+    expectedGraduation: '2026',
+    progress: 75,
+    savedPDFs: [],
+  }
 
   // Render Sidebar
   const renderSidebar = () => {
@@ -40,12 +50,7 @@ export default function App() {
   // Render Main Content
   const renderMainContent = () => {
     if (pageType === 'dashboard') {
-      return (
-        <div className='main-content'>
-          <h2>Dashboard</h2>
-          <p>Welcome to your HuskyTrack dashboard!</p>
-        </div>
-      );
+      return (<DashboardCard user={tempUser} />);
     }
 
     if (pageType === 'chat') {
