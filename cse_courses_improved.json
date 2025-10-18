@@ -1,0 +1,1301 @@
+[
+  {
+    "course_number": "CSE120",
+    "course_title": "Computer Science Principles",
+    "description": "Introduces fundamental concepts of computer science and computational thinking. Includes logical reasoning, problem solving, data representation, abstraction, the creation of “digital artifacts” such as Web pages and programs, managing complexity, operation of computers and networks, effective Web searching, ethical, legal and social aspects of information technology.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE121",
+    "course_title": "Introduction to Computer Programming I",
+    "description": "Introduction to computer programming for students without previous programming experience. Students write programs to express algorithmic thinking and solve computational problems motivated by modern societal and scientific needs. Includes procedural programming constructs (methods), control structures (loops, conditionals), and standard data types, including arrays. Cannot be taken for credit if credit received for CSE 142. Recommended: completion of Paul G. Allen School’s Guided Self-Placement.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE142"
+    ],
+    "prerequisites_text": "CSE142"
+  },
+  {
+    "course_number": "CSE122",
+    "course_title": "Introduction to Computer Programming II",
+    "description": "Computer programming for students with some previous programming experience. Emphasizes program design, style, and decomposition. Uses data structures (e.g., lists, dictionaries, sets) to solve computational problems motivated by modern societal and scientific needs. Introduces data abstraction and interface versus implementation. Cannot be taken for credit if credit received for CSE 143. Recommended: CSE 121 or completion of Paul G. Allen School’s Guided Self-Placement.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE143"
+    ],
+    "prerequisites_text": "CSE143"
+  },
+  {
+    "course_number": "CSE123",
+    "course_title": "Introduction to Computer Programming III",
+    "description": "Computer programming for students with significant previous programming experience. Emphasizes implementation and run-time analysis of data structures and algorithms using techniques including linked references, recursion, and object-oriented inheritance to solve computational problems motivated by modern societal and scientific needs. Recommended: CSE 122 or completion of Paul G. Allen School’s Guided Self-Placement.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE142",
+    "course_title": "Computer Programming I",
+    "description": "Basic programming-in-the-small abilities and concepts including procedural programming (methods, parameters, return, values), basic control structures (sequence, if/else, for loop, while loop), file processing, arrays, and an introduction to defining objects. Intended for students without prior programming experience.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE143",
+    "course_title": "Computer Programming II",
+    "description": "Continuation of CSE 142. Concepts of data abstraction and encapsulation including stacks, queues, linked lists, binary trees, recursion, instruction to complexity and use of predefined collection classes. Prerequisite: CSE 142.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE142"
+    ],
+    "prerequisites_text": "CSE142"
+  },
+  {
+    "course_number": "CSE143X",
+    "course_title": "Accelerated Computer Programming I/II",
+    "description": "Accelerated introductory offering that covers the material from both CSE 122 and CSE 123 in one quarter.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE154",
+    "course_title": "Web Programming",
+    "description": "Covers languages, tools, and techniques for developing interactive and dynamic web pages. Topics include page styling, design, and layout; client and server side scripting; web security; and interacting with data sources such as databases. Prerequisite: a minimum grade of 2.0 in either CSE 122, CSE 123, CSE 142, CSE 143, CSE 160, or CSE 163.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE160",
+    "course_title": "Data Programming",
+    "description": "Introduction to computer programming. Assignments solve real data manipulation tasks from science, engineering, business, and the humanities. Concepts of computational thinking, problem-solving, data analysis, Python programming, control and data abstraction, file processing, and data visualization. Intended for students without prior programming experience. Cannot be taken for credit if credit received for either CSE 123 or CSE 143.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE123",
+      "CSE143"
+    ],
+    "prerequisites_text": "CSE123, CSE143"
+  },
+  {
+    "course_number": "CSE163",
+    "course_title": "Intermediate Data Programming",
+    "description": "Intermediate data programming. Topics include writing programs that manipulate different types of data; leveraging the growing ecosystem of tools and libraries for data programming; writing programs that are both efficient and elegant; and writing medium-scale programs (100 to 200 lines).",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE180",
+    "course_title": "Introduction to Data Science",
+    "description": "Survey course introducing the essential elements of data science: data collection, management, curation, and cleaning; summarizing and visualizing data; basic ideas of statistical inference, machine learning. Students will gain hands-on experience through computing labs.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE190B",
+    "course_title": "Freshman Direct-Admit Seminar",
+    "description": "Seminar for Direct Admit 1st-year CSE majors.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE195",
+    "course_title": "Allen Scholars Bridge Program",
+    "description": "Enables students in the Allen Scholars program to connect with peers, gain technical fundamentals, and prepare for college via an immersive experience. Uses topics from programming, website creation, mobile-application development, and physical computing to develop skills and strategies for abstraction, managing complexity, data processing, and debugging. Introduces campus resources, professional opportunities, and academic learning strategies.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE196",
+    "course_title": "Allen Scholars Seminar",
+    "description": "Provides academic skill-building for students in the Allen Scholars program. Develops techniques for effective academic engagement and productive studying. Connects to university structure and resources for student success and well-being. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE197",
+    "course_title": "Problem Solving for Computer Science and Engineering",
+    "description": "Collaborative problem-solving sessions. Develops skills in computer science and engineering for students in the Allen Scholars and STARS programs. Must be taken with CSE 121, CSE 122, or CSE 123. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE121",
+      "CSE122",
+      "CSE123"
+    ],
+    "prerequisites_text": "CSE121, CSE122, CSE123"
+  },
+  {
+    "course_number": "CSE197W",
+    "course_title": "Problem Solving for Computer Science and Engineering (ASSP 121)",
+    "description": "Collaborative problem-solving sessions. Develops skills in computer science and engineering for students in the Allen Scholars and STARS programs. Must be taken with CSE 121. Credit/no-credit only",
+    "credits": 4,
+    "prerequisites": [
+      "CSE121"
+    ],
+    "prerequisites_text": "CSE121"
+  },
+  {
+    "course_number": "CSE197X",
+    "course_title": "Problem Solving for Computer Science and Engineering (ASSP 122)",
+    "description": "Collaborative problem-solving sessions. Develops skills in computer science and engineering for students in the Allen Scholars and STARS programs. Must be taken with CSE 122. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE122"
+    ],
+    "prerequisites_text": "CSE122"
+  },
+  {
+    "course_number": "CSE197Y",
+    "course_title": "Problem Solving for Computer Science and Engineering (ASSP 123)",
+    "description": "Collaborative problem-solving sessions. Develops skills in computer science and engineering for students in the Allen Scholars and STARS programs. Must be taken with CSE 123. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE123"
+    ],
+    "prerequisites_text": "CSE123"
+  },
+  {
+    "course_number": "CSE311",
+    "course_title": "Foundations of Computing I",
+    "description": "Examines fundamentals of logic, set theory, induction, and algebraic structures with applications to computing; finite state machines; and limits of computability. Prerequisite: a minimum grade of 2.0 in either CSE 123 or CSE 143; and a minimum grade of 2.0 in MATH 126 or MATH 135.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE312",
+    "course_title": "Foundations of Computing II",
+    "description": "Examines fundamentals of enumeration and discrete probability; applications of randomness to computing; polynomial-time versus NP; and NP-completeness. Prerequisite: CSE 311.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE311"
+    ],
+    "prerequisites_text": "CSE311"
+  },
+  {
+    "course_number": "CSE331",
+    "course_title": "Software Design and Implementation",
+    "description": "Explores concepts and techniques for design and construction of reliable and maintainable software systems in modern high-level languages: specifications; program structure and design; program-correctness approaches, including testing; and event-driven programming (e.g., graphical user interface). Prerequisite: a minimum grade of 2.0 in either CSE 123 or CSE 143.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE332",
+    "course_title": "Data Structures and Parallelism",
+    "description": "Covers abstract data types and structures including dictionaries, balanced trees, hash tables, priority queues, and graphs; sorting; asymptotic analysis; fundamental graph algorithms including graph search, shortest path, and minimum spanning trees; multithreading and parallel algorithms; P and NP complexity classes. No credit if CSE 373 has been taken. Prerequisite: CSE 311.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE311"
+    ],
+    "prerequisites_text": "CSE311"
+  },
+  {
+    "course_number": "CSE333",
+    "course_title": "Systems Programming",
+    "description": "Includes substantial programming experience in languages that expose machine characteristics and low-level data representation (e.g., C and C++); explicit memory management; modern libraries and language features; interacting with operating-system services; introduction to concurrent programming. Prerequisite: CSE 351.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE351"
+    ],
+    "prerequisites_text": "CSE351"
+  },
+  {
+    "course_number": "CSE340",
+    "course_title": "Interaction Programming",
+    "description": "User interfaces for computing systems, including principles and implementation techniques. Covers key topics and programming paradigms for interactive systems, such as event handling; graphical layout, design, and widgets; undo; accessibility; and context awareness. Provides experience with modern application domains and frameworks (e.g., mobile applications). Prerequisite: CSE 123 or CSE 143.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE123",
+      "CSE143"
+    ],
+    "prerequisites_text": "CSE123, CSE143"
+  },
+  {
+    "course_number": "CSE341",
+    "course_title": "Programming Languages",
+    "description": "Basic concepts of programming languages, including abstraction mechanisms, static and dynamic typing, scope, syntax vs. semantics, first-class function closures, and algebraic datatypes. Detailed study of functional programming and other paradigms. Cannot be taken for credit if credit received for CSE 413. Prerequisite: CSE 123 or CSE 143.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE123",
+      "CSE143",
+      "CSE413"
+    ],
+    "prerequisites_text": "CSE123, CSE143, CSE413"
+  },
+  {
+    "course_number": "CSE344",
+    "course_title": "Introduction to Data Management",
+    "description": "Introduces database management systems and writing applications that use such systems; data models (e.g., relational, semi-structured), query languages (e.g., SQL, XQuery), language bindings, conceptual modeling, transactions, security, database tuning, data warehousing, parallelism, and web-data management.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE351",
+    "course_title": "The Hardware/Software Interface",
+    "description": "Examines key computational abstraction levels below modern high-level languages; number representation, assembly language, introduction to C, memory management, the operating-system process model, high-level machine architecture including the memory hierarchy, and how high-level languages are implemented.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE369",
+    "course_title": "Introduction to Digital Design",
+    "description": "Introduces the implementation, specification, and simulation of digital logic. Boolean algebra; combinational circuits including arithmetic circuits and regular structures; sequential circuits including finite-state-machines; and use of field-programmable gate arrays (FPGAs). Emphasizes simulation, high-level specification, and automatic synthesis techniques. Cannot be taken for credit if credit received for E E 271.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE371",
+    "course_title": "Design of Digital Circuits and Systems",
+    "description": "Provides a theoretical background in, and practical experience with, tools, and techniques for modeling complex digital systems with the Verilog hardware description language, maintaining signal integrity, managing power consumption, and ensuring robust intra- and inter-system communication. Prerequisite: either E E 205 or E E 215; either E E 271 or CSE 369. Offered: jointly with E E 371.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE369"
+    ],
+    "prerequisites_text": "CSE369"
+  },
+  {
+    "course_number": "CSE390Z",
+    "course_title": "Mathematics for Computation Workshop",
+    "description": "Designed to provide academic support to students enrolled concurrently CSE 311. 311 concepts are at the core of computer science, but they are different from what many students have experienced in CS courses before. CSE 390Z is not a part of CSE 311 and is a separate course. All students enrolled in CSE 311 are welcome to register.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE391",
+    "course_title": "System and Software Tools",
+    "description": "Introduction to tools commonly used in software development. Topics include using a command-line interface, writing scripts for file and string manipulation, managing user permissions, manipulating text with regular expressions, using build-management tools, and using version-control systems. Prerequisite: either CSE 122, CSE 123, or CSE 143. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE122",
+      "CSE123",
+      "CSE143"
+    ],
+    "prerequisites_text": "CSE122, CSE123, CSE143"
+  },
+  {
+    "course_number": "CSE394",
+    "course_title": "Introduction to Research in Computer Science and Engineering",
+    "description": "Introduces students to skills and concepts that enable them to participate in computer science and engineering research. Covers the research process, different fields and methods of computing research, habits and approaches of successful researchers, and practical techniques and tools for computing research.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE401",
+    "course_title": "Introduction to Compiler Construction",
+    "description": "Fundamentals of compilers and interpreters; symbol tables; lexical analysis, syntax analysis, semantic analysis, code generation, and optimizations for general purpose programming languages. No credit to students who have taken CSE 413. Prerequisite: CSE 332; CSE 351.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332",
+      "CSE351"
+    ],
+    "prerequisites_text": "CSE332, CSE351"
+  },
+  {
+    "course_number": "CSE402",
+    "course_title": "Design and Implementation of Domain-Specific Languages",
+    "description": "Design and implementation of domain-specific languages. Creation of new programming abstractions, formal and informal language specification techniques, implementation strategies to support language analysis and execution on traditional and non-traditional computing platforms. Selection and use of appropriate software tools and development environments to build novel DSLs.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE403",
+    "course_title": "Software Engineering",
+    "description": "Fundamentals of software engineering using a group project as the basic vehicle. Topics covered include the software crisis, managing complexity, requirements specification, architectural and detailed design, testing and analysis, software process, and tools and environments. Prerequisite: CSE 331; CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE331",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE331, CSE332"
+  },
+  {
+    "course_number": "CSE421",
+    "course_title": "Introduction to Algorithms",
+    "description": "Techniques for design of efficient algorithms. Methods for showing lower bounds on computational complexity. Particular algorithms for sorting, searching, set manipulation, arithmetic, graph problems, pattern matching. Prerequisite: CSE 312; CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE312, CSE332"
+  },
+  {
+    "course_number": "CSE422",
+    "course_title": "Advanced Toolkit for Modern Algorithms",
+    "description": "A rigorous introduction to the principles of modern algorithm design, with a particular focus on the analysis of large, noisy data sets, and the algorithmic principles underlying modern statistics and machine learning. Students reason about and implement contemporary algorithms, and analyze their behavior on real-world data sets. Prerequisite: CSE 312; CSE 332; and MATH 208.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE312, CSE332"
+  },
+  {
+    "course_number": "CSE426",
+    "course_title": "Cryptography",
+    "description": "Rigorous introduction to modern cryptography. Design and application of important cryptographic objects, such as encryption, message authentication, and zero-knowledge proofs. Students learn to formalize security goals, design schemes for achieving these goals, and study security attacks or security proofs that establish the security or insecurity of schemes. Prerequisite: CSE 312.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312"
+    ],
+    "prerequisites_text": "CSE312"
+  },
+  {
+    "course_number": "CSE427",
+    "course_title": "Computational Biology",
+    "description": "Algorithmic and analytic techniques underlying analysis of large-scale biological data sets such as DNA, RNA, and protein sequences or structures, expression and proteomic profiling. Hands-on experience with databases, analysis tools, and genome markers. Applications such as sequence alignment, BLAST, phylogenetics, and Markov models. Prerequisite: CSE 312; CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE312, CSE332"
+  },
+  {
+    "course_number": "CSE428",
+    "course_title": "Computational Biology Capstone",
+    "description": "Designs and implements a software tool or software analysis for an important problem in computational molecular biology. Prerequisite: CSE 312; CSE 331; CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE331",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE312, CSE331, CSE332"
+  },
+  {
+    "course_number": "CSE431",
+    "course_title": "Introduction to Theory of Computation",
+    "description": "Models of computation, computable and noncomputable functions, space and time complexity, tractable and intractable functions. Prerequisite: CSE 312.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312"
+    ],
+    "prerequisites_text": "CSE312"
+  },
+  {
+    "course_number": "CSE434",
+    "course_title": "Introduction to Quantum Computation",
+    "description": "Basic theory of quantum information and computation, including applications and phenomena. Builds from qubits, measurements, and quantum gates toward applications including key distribution, entanglement, non-locality, and quantum algorithms including Grover search and Shor’s factoring. Includes writing quantum programs. Prerequisite: MATH 208 and CSE 312.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312"
+    ],
+    "prerequisites_text": "CSE312"
+  },
+  {
+    "course_number": "CSE438",
+    "course_title": "Computational Neuroscience",
+    "description": "Introduction to computational methods for understanding nervous systems and the principles governing their operation. Topics include representation of information by spiking neurons, information processing in neural circuits, and algorithms for adaptation and learning.Prerequisite: MATH 126 or MATH 136; MATH 208; and CSE 312.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312"
+    ],
+    "prerequisites_text": "CSE312"
+  },
+  {
+    "course_number": "CSE440",
+    "course_title": "Introduction to HCI: User Interface Design, Prototyping, and Evaluation",
+    "description": "Human-Computer Interaction (HCI) theory and techniques. Methods for designing, prototyping, and evaluating user interfaces to computing applications. Human capabilities, interface technology, interface design methods, and interface evaluation tools and techniques. Prerequisite: CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE332"
+  },
+  {
+    "course_number": "CSE441",
+    "course_title": "Advanced HCI: Advanced User Interface Design, Prototyping, and Evaluation",
+    "description": "Human-Computer Interaction (HCI) theory and techniques. Advanced methods for designing, prototyping, and evaluating user interfaces to computing applications. Novel interface technology, advanced interface design methods, and prototyping tools. Prerequisite: CSE 440.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE440"
+    ],
+    "prerequisites_text": "CSE440"
+  },
+  {
+    "course_number": "CSE442",
+    "course_title": "Data Visualization",
+    "description": "Techniques for creating effective visualizations of data based on principles from graphic design, perceptual psychology, and statistics. Topics include visual encoding models, exploratory data analysis, visualization software, interaction techniques, graphical perception, color, animation, high-dimensional data, cartography, network visualization, and text visualization. Prerequisite: CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE332"
+  },
+  {
+    "course_number": "CSE443",
+    "course_title": "Digital Accessibility",
+    "description": "Covers designing and implementing computing systems that empower and improve autonomy for all users, including those with disabilities. Presents conceptual approaches to accessibility as both a radical choice and a legal obligation. Covers assessing and removing inaccessibility barriers in documents, applications, websites, and physical-digital interfaces. Applies disability justice and related perspectives in digital and interpersonal contexts. Prerequisite: CSE 340.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE340"
+    ],
+    "prerequisites_text": "CSE340"
+  },
+  {
+    "course_number": "CSE444",
+    "course_title": "Database Systems Internals",
+    "description": "The relational data model and the SQL query language. Conceptual modeling: entity/relationships, normal forms. XML, XPath, and XQuery. Transactions: recovery and concurrency control. Implementation of a database system. A medium sized project using a rational database backend. Prerequisite: CSE 332; and either CSE 344 or CSE 414.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332",
+      "CSE344",
+      "CSE414"
+    ],
+    "prerequisites_text": "CSE332, CSE344, CSE414"
+  },
+  {
+    "course_number": "CSE446",
+    "course_title": "Machine Learning",
+    "description": "Design of efficient algorithms that learn from data. Representative topics include supervised learning, unsupervised learning, regression and classification, deep learning, kernel methods, and optimization. Emphasis on algorithmic principles and how to use these tools in practice. Prerequisite: CSE 332; MATH 208 or MATH 136; and either STAT 390, STAT 391, or CSE 312.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE312, CSE332"
+  },
+  {
+    "course_number": "CSE447",
+    "course_title": "Natural Language Processing",
+    "description": "Methods for designing systems that usefully and/or intelligently process natural language text data. Language models, text categorization, syntactic and semantic analysis, machine translation. This course emphasizes algorithms and data-driven methods. Prerequisite: CSE 312 and CSE 332; recommended: MATH 208; and CSE 446 is recommended before or concurrently.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE332",
+      "CSE446"
+    ],
+    "prerequisites_text": "CSE312, CSE332, CSE446"
+  },
+  {
+    "course_number": "CSE451",
+    "course_title": "Introduction to Operating Systems",
+    "description": "Principles of operating systems. Process management, memory management, auxiliary storage management, resource allocation. No credit to students who have completed CSE 410. Prerequisite: CSE 351; CSE 332; CSE 333.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332",
+      "CSE333",
+      "CSE351"
+    ],
+    "prerequisites_text": "CSE332, CSE333, CSE351"
+  },
+  {
+    "course_number": "CSE452",
+    "course_title": "Distributed Systems",
+    "description": "Covers abstractions and implementation techniques in the construction of distributed systems, including cloud computing, distributed storage systems, and distributed caches. Prerequisite: CSE 332 and CSE 333; recommended: CSE 451",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332",
+      "CSE333",
+      "CSE451"
+    ],
+    "prerequisites_text": "CSE332, CSE333, CSE451"
+  },
+  {
+    "course_number": "CSE453",
+    "course_title": "Data Center Systems",
+    "description": "Datacenter server, network, storage, security, and energy management technologies. Virtualization, I/O architectures, resource isolation and provisioning, disaggregation, quality of service, and tail latency. Prerequisite: CSE 332 and CSE 333; recommended: CSE 451 or CSE 452.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332",
+      "CSE333",
+      "CSE451",
+      "CSE452"
+    ],
+    "prerequisites_text": "CSE332, CSE333, CSE451, CSE452"
+  },
+  {
+    "course_number": "CSE455",
+    "course_title": "Computer Vision",
+    "description": "Introduction to image analysis and interpreting the 3D world from image data. Topics may include segmentation, motion estimation, image mosaics, 3D-shape reconstruction, object recognition, and image retrieval. Prerequisite: CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE332"
+  },
+  {
+    "course_number": "CSE456",
+    "course_title": "Story Design for Computer Animation",
+    "description": "Animation principles and production for story development and design. Design, development, and production of several storyreels, which are a tool for the pre-production of animated features and shorts. Student use authoring tools to present finished work.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE457",
+    "course_title": "Computer Graphics",
+    "description": "Introduction to computer image synthesis, modeling, and animation. Topics may include visual perception, displays and framebuffers, image processing, affine and projective transformations, hierarchical modeling, hidden surface elimination, shading, ray-tracing, anti-aliasing, texture mapping, curves, surfaces, particle systems, dynamics, character animation, and animation principles. Prerequisite: CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE332"
+  },
+  {
+    "course_number": "CSE458",
+    "course_title": "Computer Animation",
+    "description": "Introduction to basic principles of computer generated animation. Focus on the modeling and lighting of animated characters. Students from Art, CSE, and Music team up on projects to be built on commercially-available modeling and lighting packages.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE459",
+    "course_title": "Animation Pre-Production",
+    "description": "Pre-production of collaboratively designed animated shorts. In-depth analysis of classical and computer generated works. Character design and pre-planning, model sheets, character rigging, storyreel and animatics, character motion, design for multiple characters, and principles of animation as applied to character motion and effects.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE460",
+    "course_title": "Animation Capstone",
+    "description": "Apply the knowledge gained in previous animation courses to produce a short animated film. Topics include scene planning, digital cinematography, creature and hard surface modeling, animatics and basics of character animation, and rendering techniques.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE461",
+    "course_title": "Introduction to Computer Communication Networks",
+    "description": "Computer network architectures, protocol layers, network programming. Transmission media, encoding systems, switching, multiple access arbitration. Network routing, congestion control, flow control. Transport protocols, real-time, multicast, network security. Prerequisite: either CSE 326 or CSE 332; either CSE 303 or CSE 333.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE303",
+      "CSE326",
+      "CSE332",
+      "CSE333"
+    ],
+    "prerequisites_text": "CSE303, CSE326, CSE332, CSE333"
+  },
+  {
+    "course_number": "CSE462",
+    "course_title": "Wireless Communication",
+    "description": "Fundamentals of wireless communication. Reliable communication over noisy, unreliable channels. Signal to noise ratio, frequency domain analysis, bandwidth, capacity of noisy communication channels, modulation, channel coding, error detection, error correction. Connection between machine learning and communication such as decoding as inference and learning as compression. Prerequisite: MATH 208 and CSE 333.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE333"
+    ],
+    "prerequisites_text": "CSE333"
+  },
+  {
+    "course_number": "CSE464",
+    "course_title": "Advanced Topics in Digital Animation",
+    "description": "Students design individual animated works for professional quality demo reels. 2- and 3-D animatics, special effects design, advanced character animation techniques, 3-D paint techniques and integration, short design, sequence planning, non-photorealistic rendering options, interactive animation for pre-planning, and advanced production techniques and strategies.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE469",
+    "course_title": "Computer Architecture I",
+    "description": "Introduction to computer architecture. Assembly and machine language, microprocessor organization including control and datapath. Computer arithmetic. Memory systems and caching. Performance modeling of microprocessors. Prerequisite: either E E 271 or CSE 369; and either CSE 123 or CSE 143. Offered: jointly with E E 469.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE123",
+      "CSE143",
+      "CSE369"
+    ],
+    "prerequisites_text": "CSE123, CSE143, CSE369"
+  },
+  {
+    "course_number": "CSE470",
+    "course_title": "Computer Architecture II",
+    "description": "Advanced computer architecture. Performance evaluation and energy efficiency. Instruction set architectures. Instruction-level parallelism. Modern microprocessor micro-architecture. Thread-level parallelism. Cache coherency and memory consistency in shared-memory multiprocessors. Memory hierarchy. GPU architecture. Warehouse-scale computing. Trends in computer design. Prerequisite: either CSE 469 or E E 469. Offered: jointly with E E 470.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE469"
+    ],
+    "prerequisites_text": "CSE469"
+  },
+  {
+    "course_number": "CSE473",
+    "course_title": "Artificial Intelligence",
+    "description": "Principal ideas and developments in artificial intelligence: Problem solving and search, game playing, knowledge representation and reasoning, uncertainty, machine learning, natural language processing. Course overlaps with: CSE 415; CSS 382; and TCSS 435. Prerequisite: CSE 312 and CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE312, CSE332"
+  },
+  {
+    "course_number": "CSE474",
+    "course_title": "Introduction to Embedded Systems",
+    "description": "Introduces the specification, design, development, and test of real time embedded system software. Use of a modern embedded microcomputer or microcontroller as a target environment for a series of laboratory projects and a comprehensive final project. Prerequisite: CSE 143. Offered: jointly with E E 474;",
+    "credits": 4,
+    "prerequisites": [
+      "CSE143"
+    ],
+    "prerequisites_text": "CSE143"
+  },
+  {
+    "course_number": "CSE475",
+    "course_title": "Embedded Systems Capstone",
+    "description": "Capstone design experience. Prototype a substantial project mixing hardware, software, and communications. Focuses on embedded processors, programmable logic devices, and emerging platforms for the development of digital systems. Provides a comprehensive experience in specification, design, and management of contemporary embedded systems. Prerequisite: either E E 271 or CSE 369; either CSE 466, E E 472, or CSE 474/E E 474. Offered: jointly with E E 475;",
+    "credits": 4,
+    "prerequisites": [
+      "CSE369",
+      "CSE466",
+      "CSE474"
+    ],
+    "prerequisites_text": "CSE369, CSE466, CSE474"
+  },
+  {
+    "course_number": "CSE478",
+    "course_title": "Autonomous Robotics",
+    "description": "Theory and application of algorithms and probabilistic techniques for autonomous robotics. Covers topics related to state estimation (Bayes filtering, probabilistic motion and sensor models), planning/control (search based planners, lattice based planners, trajectory following techniques), and perception and learning (object detection, learning from demonstrations etc.).",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE480",
+    "course_title": "Computer Ethics Seminar",
+    "description": "Reading and discussion seminar on the ethical issues surrounding sociotechnical systems and their impacts on society. Includes historical perspectives and current topics. Relates computer technology to ethical questions of power, politics, equity, privacy, autonomy, and more. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE481",
+    "course_title": "Capstone Software",
+    "description": "Student teams design and implement a software project involving multiple areas of the CSE curriculum. Course emphasizes the development process, rather than the product. Prerequisite: CSE 312; CSE 332; CSE 351; and either CSE 331, CSE 333, or CSE 369. (Individual Capstones listed below)",
+    "credits": 4,
+    "prerequisites": [
+      "CSE312",
+      "CSE331",
+      "CSE332",
+      "CSE333",
+      "CSE351",
+      "CSE369"
+    ],
+    "prerequisites_text": "CSE312, CSE331, CSE332, CSE333, CSE351, CSE369"
+  },
+  {
+    "course_number": "CSE481N",
+    "course_title": "",
+    "description": "Design, build and present a prototype device or software tool that solves an important problem in neural engineering. Examples include interfaces based on combining AI with brain-, muscle-, and/or eye-tracking signals to control computers or robotic devices, virtual reality approaches to improving neural function, and machine learning-based software tools for analyzing large-scale neural data.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE481P",
+    "course_title": "Capstone: Social Computing",
+    "description": "Students will work in teams of 3 to 4 to design and evaluate computational formulations of global problems such as achieving stability and sufficiency of the world food supply, managing the threats of nuclear war, ending homelessness, and minimizing the undesirable consequences of climate change. Each team will begin by selecting a problem in consultation with the teaching team, identifying and analyzing appropriate information resources, including possible consultations with outside experts. The team will propose one or more basic formulations, present them, and receive critiques from both the teaching team and the other teams. They will iteratively refine their formulations, moving towards working code that supports users in roles that engage them in understanding and solving the problem.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE481S",
+    "course_title": "Capstone: Security",
+    "description": "Student teams will be tasked with creating a computer security themed product. The work will progress from product conception to requirements to design to implementation to evaluation. Along the way, students will incorporate key computer security tools and practices, including threat modeling, penetration testing, and bug fixing. Examples include password managers, censorship resistance systems, and mobile payment systems.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE481V",
+    "course_title": "Capstone: AR/VR",
+    "description": "Virtual and Augmented Reality Capstone. Students become familiar with the latest technology and software, and build an app in 10 weeks.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE484",
+    "course_title": "Computer Security",
+    "description": "Foundations of modern computer security, including software security, operating system security, network security, applied cryptography, human factors, authentication, anonymity, and web security. Prerequisite: CSE 332; CSE 351.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332",
+      "CSE351"
+    ],
+    "prerequisites_text": "CSE332, CSE351"
+  },
+  {
+    "course_number": "CSE490A",
+    "course_title": "",
+    "description": "Generative AI (GenAI) assistance for programming is transforming software development. This course is an introduction to AI-assisted software development. This is not a course about coding. It teaches clear specifications, system decomposition, code review, debugging, and similar skills needed of a team leader. A programmer directing AI agents is a team leader. Most of the topics are the same skills that you should learn today to become an effective system builder. This course presents all these concepts in a modern, AI-rich context.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE492J",
+    "course_title": "Career Seminar",
+    "description": "Career Seminar",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE492L",
+    "course_title": "CSE Leadership Seminar Series",
+    "description": "Seminar series, primarily targeted at undergraduates, that brings CSE alumni and friends to campus to describe how to be effective in a startup, small company, large company, or less common environment.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE492P",
+    "course_title": "",
+    "description": "Patterns for Career Success",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE493C",
+    "course_title": "Advanced Special Topics: Molecular Computation",
+    "description": "Introduction to molecular computation that explores how “smart” molecules can be designed and programmed, using ideas that span computer science, to not only store and process information, but to self-assemble into complex structures with nanometer precision, to sense (bio-)chemical signals from their environment, perform robust computation, and in turn actuate a physical response.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE494",
+    "course_title": "Guided Research in Computer Science and Engineering",
+    "description": "Provides guided initial research experiences in computer science and engineering. Research projects are completed either individually or in small student teams under the guidance of mentors with research experience. A seminar component explores general research guidance and tracks progress.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE373",
+    "course_title": "Data Structures and Algorithms",
+    "description": "Fundamental algorithms and data structures for implementation. Techniques for solving problems by programming. Linked lists, stacks, queues, directed graphs. Trees: representations, traversals. Searching (hashing, binary search trees, multiway trees). Garbage collection, memory management. Internal and external sorting. Intended for non-majors. Cannot be taken for credit if credit received for CSE 332.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE332"
+    ],
+    "prerequisites_text": "CSE332"
+  },
+  {
+    "course_number": "CSE374",
+    "course_title": "Intermediate Programming Concepts and Tools",
+    "description": "Covers key software development concepts and tools not in introductory courses. Concepts of lower-level programming (C/C++) and explicit memory management; techniques and tools for individual and group software development; design, implementation, and testing strategies. Intended for non-majors. Cannot be taken for credit if credit received for CSE 333.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE333"
+    ],
+    "prerequisites_text": "CSE333"
+  },
+  {
+    "course_number": "CSE410",
+    "course_title": "Computer Systems",
+    "description": "Structure and components of hardware and software systems. Machine organization, including central processor and input-output architectures; assembly language programming; operating systems, including process, storage, and file management. Intended for non-majors. No credit to students who have completed CSE 351 or CSE 451.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE412",
+    "course_title": "Introduction to Data Visualization (for non-CSE Majors)",
+    "description": "Introduction to data visualization design and use for both data exploration and explanation. Methods for creating effective visualizations using principles from graphic design, psychology, and statistics. Topics include data models, visual encoding methods, data preparation, exploratory analysis, uncertainty, cartography, interaction techniques, visual perception, and evaluation methods. Cannot be taken for credit if credit received for CSE 442.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE442"
+    ],
+    "prerequisites_text": "CSE442"
+  },
+  {
+    "course_number": "CSE413",
+    "course_title": "Programming Languages & Implementation (for non-CSE Majors)",
+    "description": "Basic concepts and implementation strategies for modern functional and object-oriented programming languages such as Scheme and Java. Intended for non-majors. No credit to students who have completed CSE 341 or CSE 401.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE414",
+    "course_title": "Introduction to Database Systems (for non-CSE Majors)",
+    "description": "Introduces database management systems and writing applications that use such systems; data models, query languages, transactions, database tuning, data warehousing, and parallelism. Intended for non-majors. Cannot be taken for credit if credit received for CSE 344.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE344"
+    ],
+    "prerequisites_text": "CSE344"
+  },
+  {
+    "course_number": "CSE415",
+    "course_title": "Introduction to Artificial Intelligence",
+    "description": "Principles and techniques for automated rational decision-making by machines. Key approaches include search, Markov Decision Processes, graphical models, Bayesian reasoning, reinforcement learning, neural networks, and other topics in artificial intelligence and machine learning. Draws examples from multiple application domains and considers societal consequences of automation and bias. Intended for non-majors. Course overlaps with: CSE 473; CSS 382; and TCSS 435. Prerequisite: CSE 373.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE373"
+    ],
+    "prerequisites_text": "CSE373"
+  },
+  {
+    "course_number": "CSE416",
+    "course_title": "Introduction to Machine Learning",
+    "description": "Provides practical introduction to machine learning. Modules include regression, classification, clustering, retrieval, recommender systems, and deep learning, with a focus on an intuitive understanding grounded in real-world applications. Intelligent applications are designed and used to make predictions on large, complex datasets. Prerequisite: either CSE 123, CSE 143, CSE 160, or CSE 163; and either STAT 311, STAT 390, STAT 391, IND E 315, MATH 394/STAT 394, STAT 395/MATH 395, or Q SCI 381. Offered: jointly with STAT 416.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE123",
+      "CSE143",
+      "CSE160",
+      "CSE163"
+    ],
+    "prerequisites_text": "CSE123, CSE143, CSE160, CSE163"
+  },
+  {
+    "course_number": "CSE417",
+    "course_title": "Algorithms and Computational Complexity",
+    "description": "Design and analysis of algorithms and data structures. Efficient algorithms for manipulating graphs and strings. Fast Fourier Transform. Models of computation, including Turing machines. Time and space complexity. NP-complete problems and undecidable problems. Intended for non-majors.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE501",
+    "course_title": "Implementation of Programming Languages",
+    "description": "Design and implementation of compilers and run-time systems for imperative, object-oriented, and functional languages. Intra- and interprocedural analyses and optimizations.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE503",
+    "course_title": "Software Engineering",
+    "description": "Specification, implementation, and testing of large, multiperson, software systems. Topics include abstraction, information hiding, software development environments, and formal specifications.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE505",
+    "course_title": "Concepts of Programming Languages",
+    "description": "Design and formal semantics of modern programming languages, includes functional and object-oriented languages.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE507",
+    "course_title": "Computer-Aided Reasoning for Software Engineering",
+    "description": "Covers theory, implementation, and applications of automated reasoning techniques, such as satisfiability solving, theorem proving, model checking, and abstract interpretation. Topics include concepts from mathematical logic and applications of automated reasoning to the design, construction, and analysis of software.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE510",
+    "course_title": "Advanced Topics in Human Computer Interaction",
+    "description": "Content varies, including interface issues for networks, embedded systems, education applications, safety and critical systems, graphics and virtual reality, databases, and computer-supported cooperative work.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE512",
+    "course_title": "Data Visualization",
+    "description": "Techniques and algorithms for creating effective visualizations based on principles from graphic design, visual art, perceptual psychology and cognitive science. Topics: data and image models, visual encoding, graphical perception, color, animation, interaction techniques, graph layout, automated design. Lectures, reading and project.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE513",
+    "course_title": "Disability Inclusion for Technologists",
+    "description": "Introduction to the future of access technologies. Topics include disability justice; accessibility technology; creating accessible applications and websites; accessibility concerns in a wide variety of computational topics such as security, fabrication, and augmented reality; and the importance of technology in addressing accessibility concerns in the world at large.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE517",
+    "course_title": "Natural Language Processing",
+    "description": "Overview of modern approaches for natural language processing. Topics include language models, text, classification, tagging, parsing, machine translation, semantic, and discourse analysis.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE521",
+    "course_title": "Design and Analysis of Algorithms I",
+    "description": "Principles of design of efficient algorithms: recursion, divide and conquer, balancing, dynamic programming, greedy method, data structure selection. Correctness and analysis of algorithms. Examples drawn from problems in sorting, searching, set manipulation, pattern-matching, graphs, matrices, polynomials, and integers.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE522",
+    "course_title": "Design and Analysis of Algorithms II",
+    "description": "Analysis of algorithms more sophisticated than those treated in 521. Content varies and may include such topics as algebraic algorithms, combinational algorithms, techniques for proving lower bounds on complexity, and algorithms for special computing devices such as networks or formulas.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE525",
+    "course_title": "Randomized Algorithms and Probabilistic Analysis",
+    "description": "Examines algorithmic techniques: random selection, random sampling, backwards analysis, algebraic methods, Monte Carlo methods, and randomized rounding; random graphs; the probabilistic method; Markov chains and random walks; and analysis tools: random variables, moments and deviations, Chernoff bounds, martingales, and balls in bins. Prerequisite: CSE 521 or equivalent; CSE majors only.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE521"
+    ],
+    "prerequisites_text": "CSE521"
+  },
+  {
+    "course_number": "CSE526",
+    "course_title": "Cryptography",
+    "description": "Introduction to the theoretical foundation of cryptography, teaching the design and application of selected important cryptographic objects, and the mathematical frameworks and methodologies of modern cryptography for formalizing security goals and developing provably secure solutions.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE527",
+    "course_title": "Computational Biology",
+    "description": "Introduces computational methods based on artificial intelligence (AI) and machine learning (ML) techniques for understanding biological systems and improving health care. AI/ML techniques such as explainable and interpretable ML, deep neural network learning, probabilistic graphical models, causal inference, and deep learning techniques are covered. Problem areas such as genetics, epigenomics, expression data analysis, proteomics, and electric health record data analysis are covered.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE528",
+    "course_title": "Computational Neuroscience",
+    "description": "Introduction to computational methods for understanding nervous systems and the principles governing their operation. Topics include representation of information by spiking neurons, information processing in neural circuits, and algorithms for adaptation and learning.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE529",
+    "course_title": "Computational Genomics",
+    "description": "Computational and statistical approaches and practices for deriving robust and rigorous insights from modern genomics datasets. Lectures alternate between genomics-inspired problem formulation and foundational statistical and computational approaches for addressing them. In foundational lectures, we will cover basics of statistical inference, hidden confounding factors, causality and causal inference, deep neural networks and interpretation approaches to deep learning models.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE531",
+    "course_title": "Computational Complexity I",
+    "description": "Deterministic and nondeterministic time and space complexity, complexity classes, and complete problems. Time and space hierarchies. Alternation and the polynomial-time hierarchy. Circuit complexity. Probabilistic computation. Exponential complexity lower bounds. Interactive proofs. Prerequisite: either CSE 311 or equivalent.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE311"
+    ],
+    "prerequisites_text": "CSE311"
+  },
+  {
+    "course_number": "CSE532",
+    "course_title": "Computational Complexity II",
+    "description": "Advanced computational complexity including several of the following: circuit complexity lower bounds, #p and counting classes, probabilistically-checkable proofs, de-randomization, logical characteristics of complexity, communication complexity, time-space tradeoffs, complexity of data structures.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE533",
+    "course_title": "Advanced Topics in Complexity Theory",
+    "description": "Topics in computational complexity more sophisticated than those treated in 532. Topics are expected to vary from year to year, but might typically focus on such areas as parallel complexity, probabilistic complexity, circuit- or automaton-based complexity, or logic.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE534",
+    "course_title": "Quantum Information and Computation",
+    "description": "Introduction to quantum information and computation. Qubits, quantum gates, and measurements. Entanglement and non-locality. Density matrix formalism. Quantum algorithms: Simon’s algorithm, Grover search, Shor’s factoring, and Hamiltonian Simulation. Quantum error-correction.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE535",
+    "course_title": "Theory of Optimization and Continuous Algorithms",
+    "description": "Theoretical foundations of convex optimization and continuous algorithms. First-order methods, rates of convergence, and acceleration; gradient, subgradient, and mirror descent. Randomization, stochastic descent, leverage scores and sampling. Interior point methods. Linear systems in convex optimization. Algorithmic applications.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE541",
+    "course_title": "Interactive Learning",
+    "description": "Foundations and methods of interactive machine learning including multi-armed bandits, active learning, and adaptive experimental design. Stochastic and adversarial K-armed bandits, structured bandits, and contextual bandits. Online learning; adaptive data collection for supervised learning.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE542",
+    "course_title": "Reinforcement Learning (offered as CSE 599B – 24sp)",
+    "description": "Foundations of modern reinforcement learning. Topics may include Markov Decision Processes, Value Iteration, Policy Iteration, Approximate Dynamic Programming, Temporal Difference Learning, Q-Learning, Policy Gradients, and Imitation Learning.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE543",
+    "course_title": "Deep Learning",
+    "description": "Covers various aspects of deep learning systems, including: basics of deep learning, programming models for expressing machine learning models, automatic differentiation, memory optimization, scheduling, distributed learning, hardware acceleration, domain specific languages, and model serving.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE544",
+    "course_title": "Principles of DBMS",
+    "description": "Data models and query languages (SQL, datalog, OQL). Relational databases, enforcement of integrity constraints. Object-oriented databases and object-relational databases. Principles of data storage and indexing. Query-execution methods and query optimization algorithms. Static analysis of queries and rewriting of queries using views. Data integration. Data mining. Principles of transaction processing.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE546",
+    "course_title": "Machine Learning",
+    "description": "Explores methods for designing systems that learn from data and improve with experience. Supervised learning and predictive modeling; decision trees, rule induction, nearest neighbors, Bayesian methods, neural networks, support vector machines, and model ensembles. Unsupervised learning and clustering.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE547",
+    "course_title": "Machine Learning for Big Data",
+    "description": "Machine Learning and statistical techniques for analyzing datasets of massive size and dimensionality. Representations include regularized linear models, graphical models, matrix factorization, sparsity, clustering, and latent factor models. Algorithms include sketching, random projections, hashing, fast nearest-neighbors, large-scale online learning, and parallel (Map-reduce, GraphLab). Prerequisite: either STAT 535 or CSE 546.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE546"
+    ],
+    "prerequisites_text": "CSE546"
+  },
+  {
+    "course_number": "CSE548",
+    "course_title": "Computer Systems Architecture",
+    "description": "Notations for computer systems. Processor design (single chip, look-ahead, pipelined, data flow). Memory hierarchy organization and management (virtual memory and caches). Microprogramming. I/O processing. Multiprocessors (SIMD and MIMD).",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE549",
+    "course_title": "High-Performance Computer Architecture",
+    "description": "Algorithm design, software techniques, computer organizations for high-performance computing systems. Selected topics from: VLSI complexity for parallel algorithms, compiling techniques for parallel and vector machines, large MIMD machines, interconnection networks, reconfigurable systems, memory hierarchies in multiprocessors, algorithmically specialized processors, data flow architectures.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE550",
+    "course_title": "Computer Systems",
+    "description": "Explores computer system design, implementation, and evaluation. Covers principles, techniques, and examples related to the construction of computer systems, including concepts that span network systems, operating systems, web servers, parallel computing, and databases. Prerequisite: CSE 451.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE451"
+    ],
+    "prerequisites_text": "CSE451"
+  },
+  {
+    "course_number": "CSE551",
+    "course_title": "Operating Systems",
+    "description": "Operating system design and construction techniques. Concurrent programming, operating system kernels, correctness, deadlock, protection, transaction processing, design methodologies, comparative structure of different kinds of operating systems, and other topics.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE552",
+    "course_title": "Distributed and Parallel Systems",
+    "description": "Principles, techniques, and examples related to the design, implementation, and analysis of distributed and parallel computer systems.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE554",
+    "course_title": "Systems for Machine Learning",
+    "description": "Covers the design and implementation of systems that perform modern machine learning. Investigates languages, compilers, computer architectures, and distributed computing for machine-learning computations, including training and inference. Explores advanced system techniques to scale modern machine-learning models and optimize computation, memory, and communication. Recommended: machine learning from a course at the level of CSE 446; and systems from a course at the level of CSE 451 or CSE 452.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE556",
+    "course_title": "Computational Fabrication",
+    "description": "Overview of the computational tools and concepts used throughout the modern pipeline for computational fabrication, including topics such as hardware abstraction languages, geometry processing fundamentals, physics-based simulation, optimization techniques, data-driven design methods, and algorithms for high-performance interactive applications.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE557",
+    "course_title": "Computer Graphics",
+    "description": "Introduction to image synthesis and computer modeling, emphasizing the underlying theory required for undertaking computer graphics research. Topics include color theory, image processing, affine and projective geometry, hidden-surface determination, photorealistic image synthesis, advanced curve and surface design, dynamics, realistic character animation.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE558",
+    "course_title": "Special Topics in Computer Graphics",
+    "description": "Advanced topics in computer graphics not treated in CSE 557. Topics vary from year to year but typically include advanced aspects of image synthesis, animation, and 3D photography.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE561",
+    "course_title": "Computer Communication and Networks",
+    "description": "Fundamentals of data transmission: coding, message formats, and protocols. Organization of computer networks. Examples of network implementations.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE562",
+    "course_title": "Mobile Systems & Applications (offered as CSE 599L – 25sp)",
+    "description": "Explores mobile system design, implementation, and evaluation. Covers concepts, techniques, algorithms underlying mobile systems and sensing applications, including algorithms for localization and tracking applications as well as building low-power wireless networks.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE564",
+    "course_title": "Computer Security and Privacy",
+    "description": "Examines the fundamental of computer security including: human factors; attack detection, measurements, and models; cryptography and communications security; system design and implementation; and side channels.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE567",
+    "course_title": "Digital Systems Design",
+    "description": "Design of digital VLSI systems starting from application specifications and racing to silicon. Topics include system design, RTL coding, synthesis, automatic place-and-route, formal equivalence checking, timing signoff, and verification.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE571",
+    "course_title": "Probabilistic Robotics",
+    "description": "Overview of mobile robot control and sensing. Behavior-based control, world modeling, localization, navigation, and planning Probabilistic sensor interpretation, Bayers filters, particle filters. Projects: Program real robots to perform navigation tasks.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE573",
+    "course_title": "Artificial Intelligence",
+    "description": "Introduction to computational models of thought and construction of intelligent information systems. Topics include search algorithms, data dependencies and truth-maintenance systems, approaches to knowledge representation, automated deduction, reasoning under uncertainty, and machine learning.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE574",
+    "course_title": "Explainable Artificial Intelligence",
+    "description": "Approaches to enhancing the interpretability and transparency of complex machine learning models, encompassing both inherently interpretable models and post hoc explanation methods. Explores a spectrum of techniques, ranging from feature attributions and their evaluation metrics to counterfactual explanations, concept-based explanations, instance explanations, and collaboration between humans and artificial intelligence.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE576",
+    "course_title": "Computer Vision",
+    "description": "Overview of computer vision, emphasizing the middle ground between image processing and artificial intelligence. Image formation, preattentive image processing, boundary and region representations, and case studies of vision architectures.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE577",
+    "course_title": "Special Topics in Computer Vision",
+    "description": "Topics vary and may include vision for graphics, probabilistic vision and learning, medical imaging, content-based image and video retrieval, robot vision, or 3D object recognition.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE579",
+    "course_title": "Intelligent Control through Learning and Optimization",
+    "description": "Design or near-optimal controllers for complex dynamical systems, using analytical techniques, machine learning, and optimization. Topics from deterministic and stochastic optimal control, reinforcement learning and dynamic programming, numerical optimization in the context of control, and robotics. Prerequisite: vector calculus; linear algebra, and Matlab. Recommended: differential equations; stochastic processes, and optimization. Offered: jointly with AMATH 579.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE580",
+    "course_title": "Computing For Social Good",
+    "description": "Explorations of computing for social good projects. Topics include best practices, exemplars of success and failure, differing theories of change and perspectives on technology’s role in progress. Students are expected to develop a solution grounded in their own perspective of social good.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE581",
+    "course_title": "Computer Ethics",
+    "description": "Ethical and philosophical approaches to thinking critically about computing technology. Tools and strategies for considering unintended consequences. Responsibilities of computer science researchers and practitioners. Application to various technology areas.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE582",
+    "course_title": "Ethics in Artificial Intelligence",
+    "description": "Real-world people-facing artificial intelligence (AI) applications, ethical implications in their design, and technical solutions to mitigate ethical risks. Topics in the intersection of AI, ethics, and computing for social good, centered around foundational and recent research. Foundations of research ethics, case studies in ethical AI, ethical challenges in developing intelligent systems, and machine learning approaches to address these issues. Prerequisite: CSE 446 or CSE 546.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE446",
+      "CSE546"
+    ],
+    "prerequisites_text": "CSE446, CSE546"
+  },
+  {
+    "course_number": "CSE583",
+    "course_title": "Software Development for Data Scientists",
+    "description": "Provides students outside of CSE with a practical knowledge of software development that is sufficient to do graduate work in their discipline. Modules include Python basics, software version control, software design, and using Python for machine learning and visualization.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE586",
+    "course_title": "Introduction to Synthetic Biology",
+    "description": "Studies mathematical modeling of transcription, translation, regulation, and metabolism in cell; computer aided design methods for synthetic biology; implementation of information processing, Boolean logic and feedback control laws with genetic regulatory networks; modularity, impedance matching and isolation in biochemical circuits; and parameter estimation methods.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE589",
+    "course_title": "Software Entrepreneurship",
+    "description": "A case- and project-based course, focusing on starting a software or hardware company. Guest entrepreneurs, lawyers, and financiers discuss market identification and analysis, planning the business, financing, and typical operating and administrative problems. Offered: jointly with CSE P 589/ENTRE 532.",
+    "credits": 4,
+    "prerequisites": [],
+    "prerequisites_text": ""
+  },
+  {
+    "course_number": "CSE197Z",
+    "course_title": "Problem Solving for Computer Science and Engineering (STARS)",
+    "description": "Collaborative problem-solving sessions. Develops skills in computer science and engineering for students in the Allen Scholars and STARS programs. Must be taken with CSE 121, CSE 122, or CSE 123. Credit/no-credit only.",
+    "credits": 4,
+    "prerequisites": [
+      "CSE121",
+      "CSE122",
+      "CSE123"
+    ],
+    "prerequisites_text": "CSE121, CSE122, CSE123"
+  }
+]
