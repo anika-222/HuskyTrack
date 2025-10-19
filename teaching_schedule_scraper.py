@@ -135,18 +135,19 @@ class TeachingScheduleScraper:
         
         df = pd.DataFrame(self.courses)
         
+        # Rename columns to be more descriptive
+        df = df.rename(columns={
+            'autumn': 'autumn_teacher',
+            'winter': 'winter_teacher', 
+            'spring': 'spring_teacher'
+        })
+        
         # Reorder columns
-        column_order = ['course_id', 'autumn', 'winter', 'spring']
+        column_order = ['course_id', 'autumn_teacher', 'winter_teacher', 'spring_teacher']
         df = df[column_order]
         
-        # Save as proper CSV with title in comments
-        with open(filename, 'w') as f:
-            f.write("# UW CSE Teaching Schedule 2025-2026 - Teachers by Quarter\n")
-            f.write("# Course ID | Fall Teachers | Winter Teachers | Spring Teachers\n")
-            f.write("# " + "=" * 60 + "\n")
-        
-        # Append the data as proper CSV
-        df.to_csv(filename, mode='a', index=False)
+        # Save as clean CSV without title
+        df.to_csv(filename, index=False)
         print(f"Saved {len(self.courses)} courses to {filename}")
     
     def print_summary(self):

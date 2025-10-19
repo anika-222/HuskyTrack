@@ -1,7 +1,4 @@
-# UW CSE Teaching Schedule 2025-2026 - Teachers by Quarter
-# Course ID | Fall Teachers | Winter Teachers | Spring Teachers
-# ============================================================
-course_id,autumn,winter,spring
+course_id,autumn_teacher,winter_teacher,spring_teacher
 110,Not offered,Not offered,Not offered
 121,Weichert/Wortzman,Natsuhara/Natsuhara,M. Wang
 122,Garza/Garza,Salguero/Salguero,Garza
