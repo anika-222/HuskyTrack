@@ -139,14 +139,13 @@ class TeachingScheduleScraper:
         column_order = ['course_id', 'autumn', 'winter', 'spring']
         df = df[column_order]
         
-        # Add title at the top
+        # Save as proper CSV with title in comments
         with open(filename, 'w') as f:
-            f.write("UW CSE Teaching Schedule 2025-2026 - Teachers by Quarter\n")
-            f.write("=" * 60 + "\n")
-            f.write("Course ID | Fall Teachers | Winter Teachers | Spring Teachers\n")
-            f.write("=" * 60 + "\n")
+            f.write("# UW CSE Teaching Schedule 2025-2026 - Teachers by Quarter\n")
+            f.write("# Course ID | Fall Teachers | Winter Teachers | Spring Teachers\n")
+            f.write("# " + "=" * 60 + "\n")
         
-        # Append the data
+        # Append the data as proper CSV
         df.to_csv(filename, mode='a', index=False)
         print(f"Saved {len(self.courses)} courses to {filename}")
     
