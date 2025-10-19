@@ -14,13 +14,15 @@ course_id,autumn,winter,spring
 197X,Salguero,M. Wang,Not offered
 197Y,Hickmon,Hickmon,Hickmon
 197Z,M. Wang,M. Wang,M. Wang
+390HA,Natsuhara,M. Wang,Garza
+390HB,Wortzman,Garza,Salguero
 EE205,Not offered,ECE,Not offered
 311,Weber/Natsuhara,Zatloukal,Zatloukal/Zatloukal
 312,Weber,Weber/Weber,Karlin/Karlin
 331,Zatloukal/Zatloukal,Wilcox/Wilcox,Wilcox
 332,R. Anderson/R. Anderson,Brunelle/Brunelle,Brunelle/Brunelle
 333,Thachuk/Alterman,Hsia/Hu,Alterman
-340,B. Shapiro,Not offered,x
+340,B. Shapiro,Not offered,Unknown professor
 341,Not offered,Reges,Reges
 344,Tang,Tang,Suciu
 351,Hsia/Hu,Garza,R. Anderson / R. Anderson
@@ -30,7 +32,7 @@ EE205,Not offered,ECE,Not offered
 391,R. Anderson,R. Anderson,Weichert
 401,Perkins,Not offered,Bernstein
 402,Not offered,Not offered,Not offered
-403,Ernst,Alverson,x?
+403,Ernst,Alverson,Might be offered
 421,Coladangelo,Nirkhe,Weber
 422,Not offered,Li,Not offered
 426,Tessaro,Not offered,Not offered
@@ -65,9 +67,11 @@ EE205,Not offered,ECE,Not offered
 487,Not offered,Not offered,CHEME
 490N,R. Rao,Not offered,Not offered
 490,Not offered,Etzioni,Not offered
+490A2,Ernst,Not offered,Not offered
 490J,Not offered,Not offered,Not offered
 493H,Not offered,Not offered,Not offered
 493F,Not offered,Not offered,Froehlich
+493G1,Not offered,Farhadi,Krishna
 493S,Morgenstern,Not offered,Oh
 493V,Not offered,Not offered,Not offered
 493X,Not offered,Not offered,Not offered
@@ -75,10 +79,11 @@ EE205,Not offered,ECE,Not offered
 493,Not offered,Giordano,Not offered
 390R,Battle,Not offered,Not offered
 390,Not offered,McCoy,Not offered
-390T,x,x,x
+390T,Unknown professor,Unknown professor,Unknown professor
 480,Grossman,Weichert,Weichert
 492J,Not offered,Champion/Nguyen,Champion/Nguyen
 492L,Not offered,Grossman,Not offered
+492P1,Not offered,Not offered,Not offered
 492,Not offered,O. Wolman,Not offered
 492C,Not offered,Not offered,Not offered
 492T,Not offered,Not offered,Wortzman
@@ -92,9 +97,12 @@ EE205,Not offered,ECE,Not offered
 481,Althoff,Not offered,Not offered
 481,Not offered,Not offered,Koh
 481D,Not offered,Popovic,Not offered
+481SEC,Not offered,Not offered,Radka
 481V,Not offered,Kemelmacher,Not offered
 481,Not offered,Not offered,Not offered
 481C,Not offered,Not offered,Cakmak
+481NLP,Not offered,Not offered,N. Smith
+481SYS,Not offered,Not offered,Peter
 481,Not offered,Fogarty,Not offered
 481,Not offered,Not offered,Gollakota
 481,Not offered,Not offered,Not offered

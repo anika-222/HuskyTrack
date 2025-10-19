@@ -60,12 +60,22 @@ class TeachingScheduleScraper:
             course_id_cell = cells[0]
             course_id = course_id_cell.get_text(strip=True)
             
-            # Skip empty rows or non-course rows
-            if not course_id or course_id in ['2025-2026', '100', '200-300 Majors', '400 Majors, Non-Capstones', 'Other Grad', 'PMP']:
+            # Skip empty rows or non-course rows (section headers)
+            skip_entries = [
+                '2025-2026', '100', '200-300 Majors', '400 Majors, Non-Capstones', 'Other Grad', 'PMP',
+                '400 Majors,\n  Non-Capstones', 'Capstones', '300-400\n  Non-Majors', '5th Year MS', 'Breadth',
+                '400 Majors,', '300-400'
+            ]
+            
+            if not course_id or course_id in skip_entries:
                 continue
             
-            # Only process actual course numbers (CSE courses, EE courses, P courses)
-            if not re.match(r'^[A-Z]{2,4}\d{3}[A-Z]?$', course_id) and not re.match(r'^P\d{3}$', course_id) and not re.match(r'^\d{3}[A-Z]?$', course_id):
+            # Skip entries that start with "M " (these appear to be section headers)
+            if course_id.startswith('M '):
+                continue
+            
+            # Skip entries that contain "Majors" or "Non-Majors" (section headers)
+            if 'Majors' in course_id or 'Non-Majors' in course_id:
                 continue
             
             course_data['course_id'] = course_id
@@ -73,22 +83,33 @@ class TeachingScheduleScraper:
             # Autumn (second column)
             autumn_cell = cells[1]
             autumn_text = autumn_cell.get_text(strip=True)
-            course_data['autumn'] = autumn_text if autumn_text else 'Not offered'
+            course_data['autumn'] = self.process_quarter_text(autumn_text)
             
             # Winter (third column)
             winter_cell = cells[2]
             winter_text = winter_cell.get_text(strip=True)
-            course_data['winter'] = winter_text if winter_text else 'Not offered'
+            course_data['winter'] = self.process_quarter_text(winter_text)
             
             # Spring (fourth column)
             spring_cell = cells[3]
             spring_text = spring_cell.get_text(strip=True)
-            course_data['spring'] = spring_text if spring_text else 'Not offered'
+            course_data['spring'] = self.process_quarter_text(spring_text)
             
             courses.append(course_data)
             print(f"Extracted: {course_id} - Au:{autumn_text}, Wi:{winter_text}, Sp:{spring_text}")
         
         return courses
+    
+    def process_quarter_text(self, text: str) -> str:
+        """Process quarter text to handle special cases"""
+        if not text:
+            return 'Not offered'
+        elif text.strip() == 'x':
+            return 'Unknown professor'
+        elif text.strip() == 'x?':
+            return 'Might be offered'
+        else:
+            return text
     
     def scrape_schedule(self) -> List[Dict]:
         """Main method to scrape the teaching schedule"""
