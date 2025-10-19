@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
 import DashboardCard from './components/DashboardCard.jsx'
+import Chat from './components/Chat.jsx';
 
 export default function App() {
   const [pageType, setPageType] = useState('dashboard');
 
+  const name = 'Jane Doe'
+
   const tempUser = {
-    name: 'Jane Doe',
+    name: name,
     email: 'jane@example.com',
     degree: 'Computer Science',
     expectedGraduation: '2028',
@@ -15,6 +18,9 @@ export default function App() {
     savedPDFs: [
       { name: 'report1.pdf', url: 'reports/test.pdf' },
     ],
+    chats: [
+      { id: 0, title: '10/18/2025', artifacts: [{ sender: name, text: "Hello" }]},
+    ]
   }
 
   // Render Sidebar
@@ -57,12 +63,7 @@ export default function App() {
     }
 
     if (pageType === 'chat') {
-      return (
-        <div className='main-content'>
-          <h2>Chat</h2>
-          <p>This is where your chat messages will appear.</p>
-        </div>
-      );
+      return (<Chat user={tempUser} id={undefined} />);
     }
   };
 
