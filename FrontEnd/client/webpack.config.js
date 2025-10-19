@@ -40,6 +40,25 @@ module.exports = {
     ],
     port: 3000,
     open: true,
+    hot: true,
+    historyApiFallback: true,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'http://localhost:5000',
+        secure: false,
+        changeOrigin: true,
+        timeout: 60000, // 1 minute timeout
+        proxyTimeout: 60000,
+        headers: {
+          Connection: 'keep-alive'
+        }
+      }
+    ],
+    client: {
+      overlay: true,
+      progress: true
+    }
   },
   resolve: {
     extensions: ['.js', '.jsx'],
