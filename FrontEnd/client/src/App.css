@@ -1,0 +1,132 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall App Container */
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: lavender;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-shrink: 0;
+    /* minimal vertical breathing room */
+}
+
+/* App Title */
+.app-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+/* Sidebar Items */
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background 0.2s ease;
+}
+
+.sidebar-item:hover {
+    background-color: #B185DB;
+    color: white;
+}
+
+.sidebar-item.active {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+/* Past Chats Section */
+.past-chats {
+    border-top: 1px solid #333;
+    padding: 10px 20px;
+}
+
+.past-chats h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    background-color: white;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.main-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    color: #555;
+    line-height: 1.4;
+}
+
+.past-chat-item {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.past-chat-item:hover {
+    background-color: #d8b4f8;
+    color: purple;
+}
+
+
+.app-title {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  top: -7px; 
+}
+
