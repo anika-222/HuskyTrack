@@ -21,7 +21,7 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-      // 🔧 Allow ESM without “fully specified” extensions (fixes Amplify .mjs imports)
+      // Allow ESM without “fully specified” extensions (fixes Amplify .mjs imports)
       {
         test: /\.m?js$/,
         resolve: { fullySpecified: false },
@@ -30,9 +30,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
-    // 🔧 Provide Node globals expected by aws-amplify
+    // Provide Node globals expected by aws-amplify
     new webpack.ProvidePlugin({
-      process: 'process/browser.js',      // NOTE the .js extension
+      process: 'process/browser.js', // note .js extension
       Buffer: ['buffer', 'Buffer'],
     }),
   ],
@@ -41,20 +41,22 @@ module.exports = {
       { directory: path.join(__dirname, 'dist') },
       { directory: path.join(__dirname, 'public'), publicPath: '/' },
     ],
-    historyApiFallback: true,
+    historyApiFallback: true,  // SPA routing (so /signin works on refresh)
     port: 3000,
-    open: true,
+    // Open the sign-in route when you run `npm start`
+    open: ['/signin'],
+    // If your dev-server version doesn’t support array syntax, use:
+    // open: { target: ['http://localhost:3000/signin'] },
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-    // 🔧 Prefer explicit .js to satisfy “fully specified” modules
     alias: {
-      'process/browser': 'process/browser.js', // make sure imports resolve WITH extension
+      // Ensure "process/browser" resolves with explicit extension
+      'process/browser': 'process/browser.js',
     },
-    // 🔧 Polyfills for Node modules used by Amplify
     fallback: {
       buffer: require.resolve('buffer/'),
-      process: require.resolve('process/browser.js'), // NOTE the .js extension
+      process: require.resolve('process/browser.js'), // note .js extension
     },
   },
 };
