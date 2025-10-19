@@ -1,34 +1,19 @@
+// Chat.jsx
 import React, { useEffect, useState, useRef } from 'react';
 import './Chat.css';
 
 export default function Chat({ user, id, setUser }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
-  const chatIdRef = useRef(null);
+  const chatIdRef = useRef(id);
 
   useEffect(() => {
-    if (!user || id == null) return;
-
-    let chatId = id;
-    let updatedUser = { ...user };
-
-    // Create new chat if id === -1
-    if (chatId === -1) {
-      chatId = updatedUser.chats.length;
-      const today = new Date();
-      const dateString = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
-      const newChat = { id: chatId, title: dateString, artifacts: [] };
-      updatedUser = {
-        ...updatedUser,
-        chats: [...updatedUser.chats, newChat]
-      };
-      setUser(updatedUser);
+    const chat = user.chats.find(c => c.id === id);
+    if (chat) {
+      setMessages(chat.artifacts || []);
+      chatIdRef.current = chat.id;
     }
-
-    const chat = updatedUser.chats.find(c => c.id === chatId);
-    setMessages(chat?.artifacts || []);
-    chatIdRef.current = chatId;
-  }, [id, user, setUser]);
+  }, [id, user]);
 
   const handleSend = (sender) => {
     if (input.trim() === '') return;
