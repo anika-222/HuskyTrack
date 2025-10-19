@@ -1,0 +1,216 @@
+course_id,autumn,winter,spring
+110,Not offered,Not offered,Not offered
+121,Weichert/Wortzman,Natsuhara/Natsuhara,M. Wang
+122,Garza/Garza,Salguero/Salguero,Garza
+123,Wilcox/Wilcox,Wortzman/Wortzman,Natsuhara/Natsuhara
+143,Reges,Not offered,Not offered
+143X,Reges,Not offered,Not offered
+154,T. Wolman,Not offered,Not offered
+160,Salguero,Weichert & R. Anderson,K. Lin
+163,K. Lin,Choi,Salguero
+180,INFO,STAT,Maas
+190B,Grossman,Not offered,Not offered
+197W,M. Wang,Not offered,Not offered
+197X,Salguero,M. Wang,Not offered
+197Y,Hickmon,Hickmon,Hickmon
+197Z,M. Wang,M. Wang,M. Wang
+EE205,Not offered,ECE,Not offered
+311,Weber/Natsuhara,Zatloukal,Zatloukal/Zatloukal
+312,Weber,Weber/Weber,Karlin/Karlin
+331,Zatloukal/Zatloukal,Wilcox/Wilcox,Wilcox
+332,R. Anderson/R. Anderson,Brunelle/Brunelle,Brunelle/Brunelle
+333,Thachuk/Alterman,Hsia/Hu,Alterman
+340,B. Shapiro,Not offered,x
+341,Not offered,Reges,Reges
+344,Tang,Tang,Suciu
+351,Hsia/Hu,Garza,R. Anderson / R. Anderson
+369,Not offered,Alterman,Alterman
+371,ECE,ECE,Hsia
+390Z,Elkin,Elkin,Weber
+391,R. Anderson,R. Anderson,Weichert
+401,Perkins,Not offered,Bernstein
+402,Not offered,Not offered,Not offered
+403,Ernst,Alverson,x?
+421,Coladangelo,Nirkhe,Weber
+422,Not offered,Li,Not offered
+426,Tessaro,Not offered,Not offered
+427,Sh. Wang,Not offered,Not offered
+431,Bafna,Not offered,Not offered
+434,Not offered,Not offered,Coladangelo
+438,Not offered,Not offered,R. Rao
+440,Fogarty,Zhang,Zhang
+442,Heer,Heer,Not offered
+443,Not offered,Mankoff,Not offered
+444,Not offered,Maas,Maas
+446,Oh & Koh,Golub & Barnes,Jaques
+447,Tsvetkov,N. Smith,Not offered
+451,Not offered,Kimura,Kasikci
+452,Krishnamurthy,St. Wang,Wilcox
+453,Peter,Not offered,Not offered
+455,L. Shapiro,Not offered,Popovic
+456,Not offered,Not offered,Not offered
+457,Popovic,Curless,Seitz
+458,Mones,Not offered,Not offered
+459,Not offered,Not offered,Not offered
+461,Gollakota,Gollakota,Not offered
+462,Not offered,Not offered,J. Smith
+464,Not offered,Not offered,Mones
+469,ECE,Oskin,ECE
+470,Not offered,Not offered,Oskin
+473,Hazen,Kessler-Faulkner,Nivala
+474,ECE,Iyer,ECE
+478,Not offered,Gupta,Srinivasa
+484,Tyagi,Radka,Kohlbrenner
+486,Nivala,Not offered,Not offered
+487,Not offered,Not offered,CHEME
+490N,R. Rao,Not offered,Not offered
+490,Not offered,Etzioni,Not offered
+490J,Not offered,Not offered,Not offered
+493H,Not offered,Not offered,Not offered
+493F,Not offered,Not offered,Froehlich
+493S,Morgenstern,Not offered,Oh
+493V,Not offered,Not offered,Not offered
+493X,Not offered,Not offered,Not offered
+493,Not offered,Thachuk,Not offered
+493,Not offered,Giordano,Not offered
+390R,Battle,Not offered,Not offered
+390,Not offered,McCoy,Not offered
+390T,x,x,x
+480,Grossman,Weichert,Weichert
+492J,Not offered,Champion/Nguyen,Champion/Nguyen
+492L,Not offered,Grossman,Not offered
+492,Not offered,O. Wolman,Not offered
+492C,Not offered,Not offered,Not offered
+492T,Not offered,Not offered,Wortzman
+494,Not offered,Battle,Battle
+495,Not offered,Not offered,Not offered
+428,Not offered,Not offered,Sh. Wang
+441,Not offered,Not offered,Not offered
+454,Not offered,Not offered,Not offered
+460,Not offered,Mones,Not offered
+475,Patel,ECE,ECE
+481,Althoff,Not offered,Not offered
+481,Not offered,Not offered,Koh
+481D,Not offered,Popovic,Not offered
+481V,Not offered,Kemelmacher,Not offered
+481,Not offered,Not offered,Not offered
+481C,Not offered,Not offered,Cakmak
+481,Not offered,Fogarty,Not offered
+481,Not offered,Not offered,Gollakota
+481,Not offered,Not offered,Not offered
+482,Not offered,Not offered,Not offered
+482,Not offered,Not offered,Not offered
+373,K. Lin,K. Lin,K. Lin
+374,Not offered,Not offered,Hazen
+390,Not offered,Reges,Not offered
+410,Not offered,Not offered,Not offered
+412,Not offered,T. Wolman,Not offered
+413,Not offered,Not offered,Reges
+414,Maas/Maas,Maas,Not offered
+415,Tanimoto,Not offered,Tanimoto
+416,Not offered,STAT,Kessler-Faulkner
+417,Brunelle/Sun,Not offered,Not offered
+599,Not offered,Farhadi,Krishna
+501,Not offered,Not offered,Not offered
+503,Not offered,Ernst,Not offered
+505,Not offered,Not offered,Not offered
+507,Tatlock,Not offered,Not offered
+510,Not offered,Not offered,Fogarty
+512,Not offered,Not offered,Battle
+513,Mankoff,Not offered,Not offered
+515,Not offered,Oh,Not offered
+517,Not offered,N. Smith,Not offered
+521,Oveis Gharan,Not offered,Not offered
+525,Not offered,Not offered,Oveis Gharan
+526,Not offered,Not offered,Tyagi
+527,Not offered,S. Lee,Not offered
+529,Not offered,Not offered,Not offered
+531,Not offered,Not offered,Bafna
+534,Nirkhe,Not offered,Not offered
+535,Not offered,Not offered,Not offered
+541,Not offered,Jamieson,Not offered
+542,Not offered,Not offered,Jamieson
+543,Du,Not offered,Not offered
+544,Suciu,Not offered,Not offered
+546,Oh & Koh,Golub & Barnes,Not offered
+547,Not offered,Not offered,Althoff
+548,Oskin,Not offered,Not offered
+550,Not offered,Not offered,Heimerl
+551,Not offered,Not offered,Not offered
+552,Not offered,Not offered,Not offered
+554,Not offered,Kasikci,Not offered
+556,Not offered,Not offered,Not offered
+557,Bernstein,Not offered,Not offered
+561,Not offered,Not offered,Not offered
+562,Not offered,Not offered,Not offered
+564,Not offered,Kohlbrenner,Not offered
+567,Not offered,Not offered,Not offered
+571,Not offered,D. Fox,Not offered
+573,Not offered,Not offered,Not offered
+574,Not offered,Not offered,S. Lee
+576,Not offered,Not offered,L. Shapiro
+579,Not offered,Not offered,Gupta
+580,Not offered,Not offered,Not offered
+581,Not offered,Reinecke,Not offered
+582,Not offered,Not offered,Not offered
+590X,Ernst,Ernst,Ernst
+522,Not offered,Not offered,Not offered
+528,Not offered,Not offered,R. Rao
+532,Not offered,Not offered,Not offered
+549,Not offered,Taylor,Not offered
+586,Nivala,Not offered,Not offered
+589,Not offered,Gottesman & Lazowska,Not offered
+599,St. Wang,Not offered,Not offered
+599,Jaques,Not offered,Not offered
+599,Li,Not offered,Not offered
+599,Not offered,Tsvetkov,Not offered
+599,Not offered,Coladangelo,Not offered
+599,Heimerl,Not offered,Not offered
+599,Not offered,Suciu,Not offered
+599,Not offered,Not offered,Nirkhe
+599,Not offered,Not offered,Heer
+599,Not offered,Not offered,Iyer
+599,Not offered,Not offered,A. Rao
+599,Not offered,Not offered,Golub
+599,Not offered,Not offered,B. Shapiro
+599,Not offered,Not offered,Not offered
+599S,Morgenstern,Not offered,Oh
+P501,Perkins,Not offered,Not offered
+P503,Not offered,Not offered,Not offered
+P504,Not offered,Not offered,Not offered
+P505,Not offered,Not offered,Not offered
+P510,Reinecke,Not offered,Not offered
+P517,Not offered,Not offered,Not offered
+P521,Not offered,Not offered,Not offered
+P527,Not offered,Not offered,Not offered
+P531,Not offered,Not offered,Not offered
+P524,Not offered,Not offered,Not offered
+P544,Not offered,Not offered,Not offered
+P546,Not offered,Not offered,Morgenstern
+P548,Not offered,Not offered,Not offered
+P551,Not offered,Not offered,Not offered
+P552,Not offered,Not offered,Not offered
+P561,Not offered,Heimerl,Not offered
+P557,Not offered,Not offered,Not offered
+P564,Not offered,Not offered,Not offered
+P573,Hajishirzi,Not offered,Not offered
+P576,Not offered,Not offered,Not offered
+P589,Not offered,Gottesman & Lazowska,Not offered
+P590,Not offered,Not offered,Tatlock
+P590,Not offered,Not offered,Krishnamurthy
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Van Horn,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Not offered,Not offered
+P590,Not offered,Du,Not offered
+P590,Not offered,Not offered,Not offered
