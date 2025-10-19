@@ -99,6 +99,7 @@ export default function App() {
     <div className="app-container">
       {renderSidebar()}
       <div className="main-content-wrapper">{renderMainContent()}</div>
+
     </div>
   );
 }

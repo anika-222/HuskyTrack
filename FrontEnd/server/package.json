@@ -9,14 +9,17 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
+    "@aws-sdk/client-lambda": "^3.500.0",
+    "@aws-sdk/client-s3": "^3.913.0",
+    "@aws-sdk/client-sts": "^3.500.0",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "@aws-sdk/client-lambda": "^3.500.0",
-    "@aws-sdk/client-s3": "^3.500.0",
-  "@aws-sdk/client-sts": "^3.500.0",
+    "express": "^4.19.2",
+    "multer": "^2.0.2",
     "node-fetch": "^2.6.7",
-    "body-parser": "^1.20.2"
+    "pdf-poppler": "^0.2.3",
+    "pdf2pic": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
