@@ -41,5 +41,81 @@ export default function DashboardCard({ user }) {
         );
     }
 
-    return (renderHeader())
+    const renderCurrentCourses = () => {
+        return (
+            <div className="current-courses-section">
+                <div className="courses-header">
+                    <h3>Current Courses</h3>
+                </div>
+                <div className="courses-list">
+                    {user.currentCourses && user.currentCourses.length > 0 ? (
+                        <ul>
+                            {user.currentCourses.map((course, idx) => (
+                                <li key={idx}>{course}</li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p>No current courses.</p>
+                    )}
+                </div>
+            </div>
+        )
+    }
+
+    const renderProgressBar = () => {
+        return (
+            <div className="progress-section">
+                <h3>Degree Progress</h3>
+                <div className="progress-bar-container">
+                    <div
+                        className="progress-bar-fill"
+                        style={{ width: `${user.progress}%` }}
+                    />
+                </div>
+                <p>{user.progress}% complete</p>
+            </div>
+        )
+    }
+
+    const renderUploadTranscriptSection = () => {
+        return (
+            <div className="upload-section">
+                <div className="button-section">
+                    <h2>New Transcript</h2>
+                    <button className="upload-button">Upload</button>
+                </div>
+                <p>Last Uploaded: transcript.pdf on 10/12/2025</p>
+            </div>
+        );
+    }
+
+    const renderUploadDarsSection = () => {
+        return (
+            <div className="upload-section">
+                <div className="button-section">
+                    <h2>New Degree Audit</h2>
+                    <button className="upload-button">Upload</button>
+                </div>
+                <p>Last Uploaded: dars.pdf on 10/12/2025</p>
+            </div>
+        );
+    }
+
+    return (
+        <>
+            {renderHeader()}
+            <div className="dashboard-card">
+                {renderCurrentCourses()}
+            </div>
+            <div className="dashboard-card">
+                {renderProgressBar()}
+            </div>
+            <div className="dashboard-card">
+                {renderUploadTranscriptSection()}
+            </div>
+            <div className="dashboard-card">
+                {renderUploadDarsSection()}
+            </div>
+        </>
+    )
 }

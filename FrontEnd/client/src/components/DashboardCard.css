@@ -5,12 +5,12 @@
     background-color: purple;
     color: white;
     padding: 15px 30px;
-    margin: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 70px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 
@@ -52,4 +52,132 @@
 
 .dropdown-content p {
     margin: 5px 0;
+}
+
+.dashboard-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    max-width: 1200px;
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: purple;
+    border-radius: 20px;
+}
+
+
+/* CURRENT COURSES SECTION */
+.current-courses-section {
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-left: 0;
+}
+
+.courses-header {
+    width: 50%;
+    /* header takes half the width */
+}
+
+.courses-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.courses-list {
+    margin-top: 10px;
+}
+
+.courses-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.courses-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* PROGRESS SECTION */
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: purple; 
+    border-radius: 12px 0 0 12px;
+    transition: width 0.3s ease-in-out;
+}
+
+.progress-section h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.progress-section p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* UPLOAD SECTION */
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+/* header and button side by side */
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* upload button style */
+.upload-button {
+    width: 120px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.upload-button:hover {
+    background-color: #B185DB;
 }

@@ -9,8 +9,9 @@ export default function App() {
     name: 'Jane Doe',
     email: 'jane@example.com',
     degree: 'Computer Science',
-    expectedGraduation: '2026',
-    progress: 75,
+    expectedGraduation: '2028',
+    currentCourses: ['Foundations of Computing 1', 'Systems Programming', 'Software Design and Implementation'],
+    progress: 53,
     savedPDFs: [],
   }
 
@@ -67,7 +68,9 @@ export default function App() {
   return (
     <div className='app-container'>
       {renderSidebar()}
-      {renderMainContent()}
+      <div className="main-content-wrapper">
+        {renderMainContent()}
+      </div>
     </div>
   );
 }
