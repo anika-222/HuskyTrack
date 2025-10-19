@@ -12,7 +12,9 @@ export default function App() {
     expectedGraduation: '2028',
     currentCourses: ['Foundations of Computing 1', 'Systems Programming', 'Software Design and Implementation'],
     progress: 53,
-    savedPDFs: [],
+    savedPDFs: [
+      { name: 'report1.pdf', url: 'reports/test.pdf' },
+    ],
   }
 
   // Render Sidebar

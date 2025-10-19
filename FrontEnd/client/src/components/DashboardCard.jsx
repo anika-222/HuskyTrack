@@ -4,6 +4,8 @@ import './DashboardCard.css';
 export default function DashboardCard({ user }) {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const [expandedPdf, setExpandedPdf] = useState(null);
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -14,6 +16,40 @@ export default function DashboardCard({ user }) {
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
+
+    const renderSavedSection = () => {
+        return (<div className="saved-pdfs-section">
+            <h2>Saved PDFs</h2>
+            {user.savedPDFs && user.savedPDFs.length > 0 ? (
+                <ul className="pdf-list">
+                    {user.savedPDFs.map((pdf, idx) => (
+                        <li key={idx} className="pdf-item">
+                            <button
+                                className="pdf-link"
+                                onClick={() =>
+                                    setExpandedPdf(expandedPdf === idx ? null : idx)
+                                }
+                            >
+                                {pdf.name}
+                            </button>
+
+                            {expandedPdf === idx && (
+                                <div className="pdf-preview">
+                                    <iframe
+                                        src={pdf.url}
+                                        title={pdf.name}
+                                        className="pdf-frame"
+                                    />
+                                </div>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No saved PDFs.</p>
+            )}
+        </div>)
+    }
 
     const renderHeader = () => {
         return (
@@ -104,17 +140,17 @@ export default function DashboardCard({ user }) {
     return (
         <>
             {renderHeader()}
-            <div className="dashboard-card">
-                {renderCurrentCourses()}
-            </div>
-            <div className="dashboard-card">
-                {renderProgressBar()}
-            </div>
-            <div className="dashboard-card">
-                {renderUploadTranscriptSection()}
-            </div>
-            <div className="dashboard-card">
-                {renderUploadDarsSection()}
+            <div className="dashboard-content">
+                <div className="dashboard-left">
+                    <div className="dashboard-card">{renderCurrentCourses()}</div>
+                    <div className="dashboard-card">{renderProgressBar()}</div>
+                    <div className="dashboard-card">{renderUploadTranscriptSection()}</div>
+                    <div className="dashboard-card">{renderUploadDarsSection()}</div>
+                </div>
+
+                <div className="dashboard-card-right">
+                    {renderSavedSection()}
+                </div>
             </div>
         </>
     )
