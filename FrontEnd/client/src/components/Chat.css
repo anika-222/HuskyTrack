@@ -40,14 +40,19 @@
 
 .user-message {
   align-self: flex-end;
-  background-color: purple;
+  background-color: purple;  /* UW Metallic Gold */
   color: white;
+  border-radius: 12px 12px 0 12px;  /* Chat bubble pointing right */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .bot-message {
   align-self: flex-start;
-  background-color: #e5e7eb;
-  color: #111827;
+  background-color: #4b2e83;  /* UW Purple */
+  color: white;
+  border-radius: 12px 12px 12px 0;  /* Gives a chat bubble look */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  white-space: pre-wrap;  /* Preserves formatting in the AI response */
 }
 
 .chat-input-container {

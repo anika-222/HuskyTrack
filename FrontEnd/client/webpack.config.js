@@ -43,10 +43,26 @@ module.exports = {
     ],
     historyApiFallback: true,  // SPA routing (so /signin works on refresh)
     port: 3000,
-    // Open the sign-in route when you run `npm start`
-    open: ['/signin'],
-    // If your dev-server version doesn’t support array syntax, use:
-    // open: { target: ['http://localhost:3000/signin'] },
+    open: true,
+    hot: true,
+    historyApiFallback: true,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'http://localhost:5000',
+        secure: false,
+        changeOrigin: true,
+        timeout: 60000, // 1 minute timeout
+        proxyTimeout: 60000,
+        headers: {
+          Connection: 'keep-alive'
+        }
+      }
+    ],
+    client: {
+      overlay: true,
+      progress: true
+    }
   },
   resolve: {
     extensions: ['.js', '.jsx'],

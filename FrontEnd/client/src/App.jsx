@@ -1,15 +1,16 @@
-// App.jsx
-import React, { useEffect, useState } from 'react';
+// src/App.jsx
+import React, { useState } from 'react';
 import './App.css';
 import DashboardCard from './components/DashboardCard.jsx';
 import Chat from './components/Chat.jsx';
-import { getCurrentUser, fetchAuthSession } from 'aws-amplify/auth';
+import SignIn from './SignIn.jsx';
 
 export default function App() {
+  // Start app showing sign-in page. After sign-in, show dashboard/chat UI.
+  const [isSignedIn, setIsSignedIn] = useState(false);
   const [pageType, setPageType] = useState('dashboard');
   const [activeChatId, setActiveChatId] = useState(null);
 
-  // Start with an empty profile; we’ll hydrate from Cognito/backend.
   const [user, setUser] = useState({
     name: '',
     email: '',
@@ -18,87 +19,22 @@ export default function App() {
     currentCourses: [],
     progress: 0,
     savedPDFs: [],
-    chats: []
+    chats: [],
   });
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    (async () => {
-      try {
-        // Ensure user is signed in; throws if not.
-        const { userId } = await getCurrentUser(); // Cognito sub
-
-        // Pull ID token claims for name/email.
-        const { tokens } = await fetchAuthSession();
-        const claims = tokens?.idToken?.payload ?? {};
-
-        // Base profile from claims (empty if missing).
-        const base = {
-          name:
-            claims.name ||
-            claims.given_name ||
-            (claims.email || '').split('@')[0] ||
-            '',
-          email: claims.email || '',
-          degree: '',
-          expectedGraduation: '',
-          currentCourses: [],
-          progress: 0,
-          savedPDFs: [],
-          chats: []
-        };
-
-        // Try to load an existing saved profile from your dev API.
-        try {
-          const res = await fetch(`http://localhost:4000/api/users/${userId}`);
-          if (res.ok) {
-            const saved = await res.json();
-            // Make sure Cognito name/email win if present.
-            setUser({
-              ...saved,
-              name: base.name || saved.name || '',
-              email: base.email || saved.email || '',
-              // Ensure arrays/fields exist even if backend omitted them.
-              currentCourses: saved.currentCourses || [],
-              savedPDFs: saved.savedPDFs || [],
-              chats: saved.chats || []
-            });
-          } else {
-            // No saved profile; just use the base (empty where unknown).
-            setUser(base);
-          }
-        } catch {
-          // Backend not running — fine for local dev; just use base.
-          setUser(base);
-        }
-      } catch {
-        // Not authenticated → go to login.
-        window.location.replace('/signin');
-        return;
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, []);
+  const onSignIn = (signedInUser) => {
+    // If SignIn passes a user object, use it; otherwise keep existing.
+    setUser(signedInUser ? { ...user, ...signedInUser } : user);
+    setIsSignedIn(true);
+  };
 
   const startNewChat = () => {
     const chats = user.chats || [];
-    const newId = chats.length;
-    const now = new Date();
-    const title = `${now.toLocaleDateString()} ${now.toLocaleTimeString([], {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
-    })}`;
+    const newId = chats.length > 0 ? Math.max(...chats.map(c => c.id ?? 0)) + 1 : 0;
+    const title = new Date().toLocaleString();
     const newChat = { id: newId, title, artifacts: [] };
 
-    const updatedUser = {
-      ...user,
-      chats: [...chats, newChat]
-    };
-
-    setUser(updatedUser);
+    setUser(prev => ({ ...prev, chats: [...(prev.chats || []), newChat] }));
     setActiveChatId(newId);
     setPageType('chat');
   };
@@ -141,7 +77,6 @@ export default function App() {
           Chat
         </li>
       </ul>
-
       <div className="past-chats">
         <h3>Past Chats</h3>
         {renderPastChats()}
@@ -150,19 +85,15 @@ export default function App() {
   );
 
   const renderMainContent = () => {
-    if (loading) return <div style={{ padding: 24 }}>Loading…</div>;
-
-    if (pageType === 'dashboard') {
-      // DashboardCard will happily accept an empty user and show blank fields.
-      return <DashboardCard user={user} />;
-    }
-
-    if (pageType === 'chat' && activeChatId !== null) {
+    if (pageType === 'dashboard') return <DashboardCard user={user} />;
+    if (pageType === 'chat' && activeChatId != null)
       return <Chat user={user} id={activeChatId} setUser={setUser} />;
-    }
-
     return <div>Select a chat</div>;
   };
+
+  if (!isSignedIn) {
+    return <SignIn onSignIn={onSignIn} />;
+  }
 
   return (
     <div className="app-container">
