@@ -71,7 +71,7 @@ const theme = {
   }
 };
 
-export default function SignIn() {
+export default function SignIn(props) {
   useEffect(() => { document.title = 'Sign in • HuskyTrack'; }, []);
 
   return (
@@ -104,6 +104,12 @@ export default function SignIn() {
         {/* Card wrapper to add spacing & logo on top */}
         <div style={{ width: 'min(94vw, 520px)' }}>
           <Authenticator
+            initialState="signIn"
+            onStateChange={(authState) => {
+              if (authState === 'signedIn') {
+                props.onSignIn();
+              }
+            }}
             components={{
               Header() {
                 return (
@@ -171,8 +177,11 @@ export default function SignIn() {
               }
             }}
           >
-            {() => {
-              window.location.replace('/');
+            {({ signOut, user }) => {
+              props.onSignIn({
+                name: user?.attributes?.name || '',
+                email: user?.attributes?.email || '',
+              });
               return null;
             }}
           </Authenticator>

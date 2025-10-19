@@ -1,15 +1,31 @@
 // src/App.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { getCurrentUser } from 'aws-amplify/auth';
 import './App.css';
 import DashboardCard from './components/DashboardCard.jsx';
 import Chat from './components/Chat.jsx';
 import SignIn from './SignIn.jsx';
 
 export default function App() {
-  // Start app showing sign-in page. After sign-in, show dashboard/chat UI.
   const [isSignedIn, setIsSignedIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [pageType, setPageType] = useState('dashboard');
   const [activeChatId, setActiveChatId] = useState(null);
+
+  useEffect(() => {
+    checkAuthState();
+  }, []);
+
+  const checkAuthState = async () => {
+    try {
+      const user = await getCurrentUser();
+      setIsSignedIn(!!user);
+    } catch {
+      setIsSignedIn(false);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const [user, setUser] = useState({
     name: '',
@@ -90,6 +106,20 @@ export default function App() {
       return <Chat user={user} id={activeChatId} setUser={setUser} />;
     return <div>Select a chat</div>;
   };
+
+  if (isLoading) {
+    return (
+      <div style={{ 
+        height: '100vh', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        background: '#f7f2ff'
+      }}>
+        Loading...
+      </div>
+    );
+  }
 
   if (!isSignedIn) {
     return <SignIn onSignIn={onSignIn} />;

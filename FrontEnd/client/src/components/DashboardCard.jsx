@@ -1,16 +1,19 @@
-// FrontEnd/client/src/components/DashboardCard.jsx
 import React, { useState, useRef, useEffect } from 'react';
 import './DashboardCard.css';
 import PDFUpload from './PDFUpload.jsx';
 import PDFViewer from './PDFViewer.jsx';
-import { getCurrentUser, fetchAuthSession, signOut } from 'aws-amplify/auth';
+import { getCurrentUser, fetchAuthSession } from 'aws-amplify/auth';
 
 
 export default function DashboardCard({ user, setUser }) {
+    // State
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const dropdownRef = useRef(null);
-    const [expandedPdf, setExpandedPdf] = useState(null);
+    const [profile, setProfile] = useState(user);
+    const [sub, setSub] = useState(null);
     const [viewingPdf, setViewingPdf] = useState(null);
+    
+    // Refs
+    const dropdownRef = useRef(null);
 
     const handlePDFUpload = (pdfData) => {
         const newPDF = {
@@ -43,8 +46,8 @@ export default function DashboardCard({ user, setUser }) {
     };
 
   // local working copy of the user; start with props, then hydrate from Cognito/backend
-    const [profile, setProfile] = useState(user);
-    const [sub, setSub] = useState(null);
+    
+ 
 
   // ---- load Cognito identity (name/email) and persist profile once on mount
     useEffect(() => {
@@ -122,6 +125,17 @@ export default function DashboardCard({ user, setUser }) {
         </div>)
     }
 
+    // close dropdown on outside click
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setDropdownOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
+
     const renderHeader = () => {
         return (
             <header className="app-header">
@@ -155,16 +169,6 @@ export default function DashboardCard({ user, setUser }) {
                 </div>
             </header>
         );
-  // close dropdown on outside click
-    useEffect(() => {
-    const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setDropdownOpen(false);
-        }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
 
   // ---- helpers to persist any profile change (e.g., when you wire Upload/Chat later)
     async function saveProfile(next) {
@@ -235,12 +239,9 @@ export default function DashboardCard({ user, setUser }) {
                     uploadType="Degree Audit" 
                     onUploadSuccess={handlePDFUpload}
                 />
-
             </div>
-        )}
-        </div>
-    </header>
-    );
+        );
+    };
 
     const renderCurrentCourses = () => (
     <div className="current-courses-section">
@@ -261,53 +262,7 @@ export default function DashboardCard({ user, setUser }) {
     </div>
     );
 
-    const renderProgressBar = () => (
-    <div className="progress-section">
-        <h3>Degree Progress</h3>
-        <div className="progress-bar-container">
-        <div
-            className="progress-bar-fill"
-            style={{ width: `${profile.progress}%` }}
-        />
-        </div>
-        <p>{profile.progress}% complete</p>
-    </div>
-    );
 
-    const renderUploadTranscriptSection = () => (
-    <div className="upload-section">
-        <div className="button-section">
-        <h2>New Transcript</h2>
-        <button
-            className="upload-button"
-            onClick={() => {
-            // example of persisting a change (stub)
-            const next = {
-                ...profile,
-                savedPDFs: [
-                ...(profile.savedPDFs || []),
-                { name: 'transcript.pdf', url: '/reports/report1.pdf' },
-                ],
-            };
-            saveProfile(next);
-            }}
-        >
-            Upload
-        </button>
-        </div>
-        <p>Last Uploaded: transcript.pdf on 10/12/2025</p>
-    </div>
-    );
-
-    const renderUploadDarsSection = () => (
-    <div className="upload-section">
-        <div className="button-section">
-        <h2>New Degree Audit</h2>
-        <button className="upload-button">Upload</button>
-        </div>
-        <p>Last Uploaded: dars.pdf on 10/12/2025</p>
-    </div>
-    );
 
     return (
     <>
@@ -332,4 +287,5 @@ export default function DashboardCard({ user, setUser }) {
         </>
     )
 
+}
 }
