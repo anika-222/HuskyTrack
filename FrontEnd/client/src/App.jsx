@@ -5,23 +5,20 @@ import Chat from './components/Chat.jsx';
 
 export default function App() {
   const [pageType, setPageType] = useState('dashboard');
-
-  const name = 'Jane Doe'
-
-  const tempUser = {
-    name: name,
+  const [artifacts, setArtifacts] = useState(null);
+  const [user, setUser] = useState({
+    name: 'Jane Doe',
     email: 'jane@example.com',
     degree: 'Computer Science',
     expectedGraduation: '2028',
     currentCourses: ['Foundations of Computing 1', 'Systems Programming', 'Software Design and Implementation'],
     progress: 53,
-    savedPDFs: [
-      { name: 'report1.pdf', url: 'reports/test.pdf' },
-    ],
-    chats: [
-      { id: 0, title: '10/18/2025', artifacts: [{ sender: name, text: "Hello" }]},
-    ]
-  }
+    savedPDFs: [{ name: 'report1.pdf', url: 'reports/test.pdf' }],
+    chats: []
+  });
+
+
+  console.log(user.chats);
 
   // Render Sidebar
   const renderSidebar = () => {
@@ -37,7 +34,7 @@ export default function App() {
           </li>
           <li
             className={`sidebar-item ${pageType === 'chat' ? 'active' : ''}`}
-            onClick={() => setPageType('chat')}
+            onClick={() => { setPageType('chat'); setArtifacts(null); }}
           >
             Chat
           </li>
@@ -53,17 +50,38 @@ export default function App() {
 
   // Render Past Chats
   const renderPastChats = () => {
-    return <div>No chats yet</div>;
+    if (!user.chats || user.chats.length === 0) {
+      return <div>No chats yet</div>;
+    }
+
+    return (
+      <div className="past-chats-list">
+        {user.chats.map((chat) => (
+          <div
+            key={chat.id}
+            data-id={chat.id}
+            className="past-chat-item"
+            onClick={() => { setArtifacts(chat.id); setPageType('chat');  }} 
+          >
+            {chat.title}
+          </div>
+        ))}
+      </div>
+    );
   };
 
   // Render Main Content
   const renderMainContent = () => {
     if (pageType === 'dashboard') {
-      return (<DashboardCard user={tempUser} />);
+      return (<DashboardCard user={user} />);
     }
 
-    if (pageType === 'chat') {
-      return (<Chat user={tempUser} id={undefined} />);
+    if (pageType === 'chat' && !artifacts) {
+      return (<Chat user={user} id={-1} setUser={setUser} />);
+    }
+
+    if (pageType === 'chat' && artifacts) {
+      return (<Chat user={user} id={artifacts} setUser={setUser} />);
     }
   };
 

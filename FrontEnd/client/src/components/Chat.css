@@ -73,7 +73,7 @@
   padding: 10px 16px;
   border: none;
   border-radius: 8px;
-  background-color: #4f46e5;
+  background-color: purple;
   color: white;
   cursor: pointer;
   font-weight: 500;
@@ -81,5 +81,5 @@
 }
 
 .send-button:hover {
-  background-color: #4338ca;
+  background-color: #6b21a8;
 }
