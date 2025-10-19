@@ -41,7 +41,10 @@ export default function App() {
   // Sidebar
   const renderSidebar = () => (
     <div className='sidebar'>
-      <h2 className='app-title'>HuskyTrack</h2>
+      <div className='app-title'>
+        <img src='logo.png' alt='Logo' className='app-logo' />
+        <h2 className='app-title'>HuskyTrack</h2>
+      </div>
       <ul className='sidebar-list'>
         <li
           className={`sidebar-item ${pageType === 'dashboard' ? 'active' : ''}`}

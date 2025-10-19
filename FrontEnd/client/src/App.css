@@ -109,6 +109,24 @@
 }
 
 .past-chat-item:hover {
-    background-color: #d8b4f8; /* light purple highlight */
+    background-color: #d8b4f8;
     color: purple;
 }
+
+
+.app-title {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  top: -7px; 
+}
+
