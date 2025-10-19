@@ -1,35 +1,51 @@
-# dependencies
-node_modules/
-/.pnp
+cat > .gitignore <<'EOF'
+# Node & package artifacts
+**/node_modules/
+.pnp
 .pnp.js
+*.tsbuildinfo
 
-# testing
-/coverage
+# Build outputs
+build/
+dist/
+**/build/
+**/dist/
+.eslintcache
+.parcel-cache
+.turbo/
+storybook-static/
+.next/
+.nuxt/
 
-# production
-/build
-/dist
+# Test coverage
+coverage/
 
-# environment variables
+# Env (keep examples tracked)
 .env
+.env.*.local
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.*
+!.env.example
+!.env.*.example
+.envrc
 
-# logs
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# IDE specific files
-.vscode
-.idea
+# IDE/editor
+.vscode/
+.idea/
 *.swp
 *.swo
 
-# OS generated files
+# OS cruft
 .DS_Store
 .DS_Store?
 ._*
@@ -37,3 +53,6 @@ yarn-error.log*
 .Trashes
 ehthumbs.db
 Thumbs.db
+EOF
+
+git add .gitignore
