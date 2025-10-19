@@ -18,11 +18,14 @@ export default function App() {
     chats: []
   });
 
-  // ✅ Create a new chat explicitly
   const startNewChat = () => {
     const newId = user.chats.length;
     const today = new Date();
-    const title = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+    const title = `${today.toLocaleDateString()} ${today.toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    })}`;
     const newChat = { id: newId, title, artifacts: [] };
 
     const updatedUser = {
@@ -68,7 +71,7 @@ export default function App() {
 
     return (
       <div className="past-chats-list">
-        {user.chats.map((chat) => (
+        {[...user.chats].reverse().map((chat) => (
           <div
             key={chat.id}
             className="past-chat-item"

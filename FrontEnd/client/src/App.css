@@ -101,3 +101,14 @@
     line-height: 1.4;
 }
 
+.past-chat-item {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.past-chat-item:hover {
+    background-color: #d8b4f8; /* light purple highlight */
+    color: purple;
+}
